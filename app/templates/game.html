@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block title %}POKÉLAB - Laboratorio{% endblock %}
+
+{% block content %}
+
+<div class="game-container">
+
+    <!-- Escenario principal -->
+    <section class="laboratory">
+
+        <!-- Acceso al cuaderno -->
+        <button id="notebook-button" class="notebook-button">
+            📖
+        </button>
+
+        <!-- Personaje provisional -->
+        <div class="oak-placeholder">
+            <div class="placeholder-sprite">👨‍🔬</div>
+            <span>PROF. OAK</span>
+        </div>
+
+        <!-- Cuadro de diálogo -->
+        <div class="dialogue-box">
+
+            <p id="dialogue-text">
+                ¡Bienvenido al laboratorio Pokémon!
+            </p>
+
+            <button id="next-dialogue" class="dialogue-next">
+                SIGUIENTE ▼
+            </button>
+
+        </div>
+
+        <!-- Cuaderno de investigación -->
+        <aside id="notebook-panel" class="notebook-panel hidden">
+
+            <button id="close-notebook" class="notebook-close">
+                X
+            </button>
+
+            <h2>CUADERNO DE INVESTIGACIÓN</h2>
+
+            <p>
+                Aquí podrás consultar información sobre MongoDB,
+                la estructura de los Pokémon y las herramientas
+                disponibles en el laboratorio.
+            </p>
+
+            <h3>Conceptos principales</h3>
+
+            <ul>
+                <li>Documentos y colecciones</li>
+                <li>Arrays y documentos anidados</li>
+                <li>Consultas y filtros</li>
+                <li>Inserción y actualización</li>
+            </ul>
+
+        </aside>
+
+    </section>
+
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/dialogue.js') }}"></script>
+<script src="{{ url_for('static', filename='js/notebook.js') }}"></script>
+{% endblock %}
