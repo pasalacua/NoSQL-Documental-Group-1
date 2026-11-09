@@ -1,3 +1,4 @@
+
 {% extends "base.html" %}
 
 {% block title %}POKÉLAB - Laboratorio{% endblock %}
@@ -6,12 +7,14 @@
 
 <div class="game-container">
 
-    <!-- Escenario principal -->
     <section class="laboratory">
 
         <!-- Acceso al cuaderno -->
         <button id="notebook-button" class="notebook-button">
-            📖
+            <img
+                src="{{ url_for('static', filename='assets/interface/CarpetaBDPKM.png') }}"
+                alt="Abrir cuaderno de investigación"
+            >
         </button>
 
         <!-- Personaje provisional -->
@@ -22,7 +25,6 @@
 
         <!-- Cuadro de diálogo -->
         <div class="dialogue-box">
-
             <p id="dialogue-text">
                 ¡Bienvenido al laboratorio Pokémon!
             </p>
@@ -30,37 +32,45 @@
             <button id="next-dialogue" class="dialogue-next">
                 SIGUIENTE ▼
             </button>
-
         </div>
 
         <!-- Cuaderno de investigación -->
-        <aside id="notebook-panel" class="notebook-panel hidden">
+        <aside id="notebook-panel" class="notebook-overlay hidden">
 
             <button id="close-notebook" class="notebook-close">
                 X
             </button>
 
-            <h2>CUADERNO DE INVESTIGACIÓN</h2>
+            <div class="notebook-container">
 
-            <p>
-                Aquí podrás consultar información sobre MongoDB,
-                la estructura de los Pokémon y las herramientas
-                disponibles en el laboratorio.
-            </p>
+                <img
+                    src="{{ url_for('static', filename='assets/interface/Carpeta-abiertaBDPKN.png') }}"
+                    alt="Cuaderno de investigación abierto"
+                    class="notebook-image"
+                >
 
-            <h3>Conceptos principales</h3>
+                <div id="notebook-left" class="notebook-page notebook-left">
+                </div>
 
-            <ul>
-                <li>Documentos y colecciones</li>
-                <li>Arrays y documentos anidados</li>
-                <li>Consultas y filtros</li>
-                <li>Inserción y actualización</li>
-            </ul>
+                <div id="notebook-right" class="notebook-page notebook-right">
+                </div>
 
+                <div class="notebook-navigation">
+                    <button id="previous-page" class="page-arrow" disabled>
+                        ◀
+                    </button>
+
+                    <span id="page-indicator">1 / 3</span>
+
+                    <button id="next-page" class="page-arrow">
+                        ▶
+                    </button>
+                </div>
+
+            </div>
         </aside>
 
     </section>
-
 </div>
 
 {% endblock %}
