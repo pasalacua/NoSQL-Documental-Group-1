@@ -413,3 +413,17 @@ body {
         top: 30%;
     }
 }
+
+
+/* Tipografía general del juego */
+body {
+    font-family: 'Silkscreen', monospace;
+}
+
+/* Elementos destacados */
+h1, h2, h3,
+button,
+.menu-option,
+.title-subtitle {
+    font-family: 'Press Start 2P', monospace;
+}
