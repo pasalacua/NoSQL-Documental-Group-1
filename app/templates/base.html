@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}POKÉLAB{% endblock %}</title>
+
+    <!-- Tailwind CSS: framework para diseñar la interfaz -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen bg-slate-950 text-slate-100">
+
+    <header class="border-b border-slate-800 bg-slate-900">
+        <div class="mx-auto max-w-7xl px-6 py-5">
+            <h1 class="text-2xl font-bold tracking-wide text-cyan-400">
+                POKÉLAB
+            </h1>
+
+            <p class="text-sm text-slate-400">
+                Pokémon Research Database
+            </p>
+        </div>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-6 py-10">
+        {% block content %}{% endblock %}
+    </main>
+
+</body>
+</html>
