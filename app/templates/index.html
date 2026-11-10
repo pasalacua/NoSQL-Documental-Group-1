@@ -44,11 +44,22 @@
         <h2 id="modal-titulo">NUEVA PARTIDA</h2>
         <label for="nombre-investigador">¿Cómo te llamás, investigador?</label>
         <input id="nombre-investigador" name="nombre" maxlength="20" autocomplete="off" required
-               placeholder="Tu nombre">
+               placeholder="TU NOMBRE" aria-describedby="selector-ayuda">
+
+        <div id="name-keyboard" class="name-keyboard" aria-label="Selector de letras Pokémon"></div>
+
+        <div class="name-actions">
+            <button type="button" id="name-backspace" class="name-action">◀ BORRAR</button>
+            <button type="button" id="name-clear" class="name-action">LIMPIAR</button>
+        </div>
+
+        <p id="selector-ayuda" class="name-selector-help">
+            Elegí las letras como en la pantalla de nombre de Pokémon o escribí directamente.
+        </p>
         <p id="modal-error" class="modal-error"></p>
         <div class="modal-actions">
             <button type="button" id="modal-cancelar" class="btn-sec">VOLVER</button>
-            <button type="submit" class="btn">COMENZAR</button>
+            <button type="submit" class="btn">CONFIRMAR ▶</button>
         </div>
     </form>
 </div>

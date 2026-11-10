@@ -82,10 +82,12 @@ button.btn-close {
 }
 
 .modal-box {
-    width: min(420px, 100%);
+    width: min(560px, 100%);
     padding: 24px;
     background: var(--pk-crema);
-    border: 5px solid var(--pk-azul);
+    border: 10px solid transparent;
+    border-image: url("../assets/interface/name-frame.png") 8 fill stretch;
+    box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.35);
     color: var(--pk-texto);
     display: flex;
     flex-direction: column;
@@ -103,6 +105,57 @@ button.btn-close {
     font-size: 16px;
     color: var(--pk-texto);
     background: #fff;
+}
+
+.modal-box input#nombre-investigador {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Press Start 2P", monospace;
+    font-size: 16px;
+}
+
+.name-keyboard {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(34px, 1fr));
+    gap: 5px;
+    padding: 12px;
+    background: #7fb0cf;
+    border: 4px solid var(--pk-azul);
+}
+
+.name-letter,
+.name-action {
+    min-height: 38px;
+    border: 3px solid var(--pk-azul);
+    background: var(--pk-papel);
+    color: var(--pk-azul);
+    font-family: "Press Start 2P", monospace;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.name-letter:hover,
+.name-action:hover {
+    background: var(--pk-amarillo);
+}
+
+.name-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.name-action {
+    padding: 8px 10px;
+}
+
+.name-selector-help {
+    margin: 0;
+    color: var(--pk-texto);
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .modal-error { min-height: 1.2em; color: var(--pk-rojo); font-size: 13px; }
@@ -171,6 +224,13 @@ button.hud-button:hover { background: #d5e4ed; }
 .trainer-option.completada .trainer-state { color: var(--pk-verde); }
 
 /* Diálogo con botones de acción */
+
+.dialogue-box,
+.trainer-list {
+    border: 10px solid transparent;
+    border-image: url("../assets/interface/dialogue-frame.png") 8 fill stretch;
+    box-shadow: 6px 6px 0 rgba(16, 24, 32, 0.3);
+}
 
 .dialogue-box { z-index: 6; }
 

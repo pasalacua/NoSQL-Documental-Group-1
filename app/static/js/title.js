@@ -5,13 +5,41 @@ const titulo = document.getElementById("modal-titulo");
 const campoNombre = document.getElementById("nombre-investigador");
 const errorModal = document.getElementById("modal-error");
 const estadoConexion = document.getElementById("estado-conexion");
+const tecladoNombre = document.getElementById("name-keyboard");
+const borrarNombre = document.getElementById("name-backspace");
+const limpiarNombre = document.getElementById("name-clear");
 
 let modo = "nueva";
+
+"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").forEach((letra) => {
+    const boton = document.createElement("button");
+    boton.type = "button";
+    boton.className = "name-letter";
+    boton.textContent = letra;
+    boton.setAttribute("aria-label", `Agregar ${letra}`);
+    boton.addEventListener("click", () => {
+        if (campoNombre.value.length >= campoNombre.maxLength) return;
+        campoNombre.value += letra;
+        campoNombre.focus();
+    });
+    tecladoNombre.appendChild(boton);
+});
+
+borrarNombre.addEventListener("click", () => {
+    campoNombre.value = campoNombre.value.slice(0, -1);
+    campoNombre.focus();
+});
+
+limpiarNombre.addEventListener("click", () => {
+    campoNombre.value = "";
+    campoNombre.focus();
+});
 
 function abrirModal(nuevoModo) {
     modo = nuevoModo;
     titulo.textContent = modo === "nueva" ? "NUEVA PARTIDA" : "CARGAR PARTIDA";
     errorModal.textContent = "";
+    campoNombre.value = "";
     modal.classList.remove("hidden");
     campoNombre.focus();
 }
@@ -27,6 +55,7 @@ document.addEventListener("keydown", (evento) => {
 formulario.addEventListener("submit", async (evento) => {
     evento.preventDefault();
     errorModal.textContent = "";
+    campoNombre.value = campoNombre.value.trim().toUpperCase();
     const url = modo === "nueva" ? "/api/investigadores" : "/api/investigadores/cargar";
     try {
         await API.post(url, { nombre: campoNombre.value });

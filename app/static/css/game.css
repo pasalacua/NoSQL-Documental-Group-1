@@ -512,5 +512,10 @@ button,
 }
 
 .player-character {
-    visibility: hidden;
+    visibility: visible;
+}
+
+.oak-character img,
+.player-character img {
+    filter: drop-shadow(3px 3px 0 rgba(16, 24, 32, 0.45));
 }
