@@ -149,12 +149,36 @@ const Terminal = (() => {
         visor.classList.remove("hidden");
     }
 
+    
     function tarjetaPokemon(doc) {
-        const tipos = (doc.tipos || []).map((t) => `<span class="tipo">${esc(t)}</span>`).join("");
-        const vel = doc.estadisticas ? `VEL ${esc(doc.estadisticas.velocidad)}` : "";
+        const tipos = (doc.tipos || [])
+            .map((t) => `<span class="tipo">${esc(t)}</span>`)
+            .join("");
+
+        const vel = doc.estadisticas
+            ? `VEL ${esc(doc.estadisticas.velocidad)}`
+            : "";
+
+        const iniciales = esc(
+            String(doc.nombre || "?").slice(0, 2).toUpperCase()
+        );
+
+        const sprite = doc.sprite
+            ? `<img
+                    src="/static/assets/pokemon/${encodeURIComponent(doc.sprite)}"
+                    alt="${esc(doc.nombre)}"
+                    onerror="this.replaceWith(Object.assign(document.createElement('span'), {
+                        className: 'poke-sprite-fallback',
+                        textContent: '${iniciales}'
+                    }))"
+                >`
+            : `<span class="poke-sprite-fallback">${iniciales}</span>`;
+
         return `
             <button type="button" class="poke-card" data-numero="${esc(doc.numero)}">
-                <span class="poke-sprite" aria-hidden="true">${esc(String(doc.nombre || "?").slice(0, 2).toUpperCase())}</span>
+                <span class="poke-sprite">
+                    ${sprite}
+                </span>
                 <span class="poke-info">
                     <span class="poke-nombre">#${esc(doc.numero)} ${esc(doc.nombre)}</span>
                     <span class="poke-tipos">${tipos}</span>
@@ -163,6 +187,7 @@ const Terminal = (() => {
                 <span class="poke-ver">VER DOC</span>
             </button>`;
     }
+
 
     function textoPlan(plan) {
         if (!plan || !plan.disponible) return "";
