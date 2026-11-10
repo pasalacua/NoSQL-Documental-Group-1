@@ -47,6 +47,11 @@ Permite encontrar Pokémon mediante diferentes criterios:
 ### 3. Administración de información
 Permite consultar y modificar estadísticas, habilidades y movimientos, aprovechando la flexibilidad de los documentos de MongoDB.
 
+### 4. Flujo inicial estilo Pokémon
+La partida comienza con un selector de nombre inspirado en `Intro-Screens-PKM.png`.
+El nombre se guarda en el navegador y se utiliza en la introducción del laboratorio.
+Los diálogos y la lista de entrenadores utilizan marcos extraídos de `Menu-Frames-PKM.png`.
+
 ## 🗂️ Estructura del proyecto
 
 ```text
@@ -116,6 +121,8 @@ python run.py
 ## 📚 Documentación
 
 La carpeta `docs/` contiene documentación complementaria sobre el desarrollo, incluyendo el diseño del modelo de datos y las decisiones técnicas del proyecto.
+
+Las herramientas de `tools/` permiten regenerar los recortes de personajes y los marcos de interfaz a partir de las spritesheets originales.
 
 ## 👥 Equipo de desarrollo
 

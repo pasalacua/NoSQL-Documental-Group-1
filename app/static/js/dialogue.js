@@ -1,14 +1,13 @@
-// Elementos del laboratorio
 const dialogueText = document.getElementById("dialogue-text");
 const nextButton = document.getElementById("next-dialogue");
-
-const oakPlaceholder = document.querySelector(".oak-placeholder");
+const oakCharacter = document.querySelector(".oak-character");
 const trainerList = document.getElementById("trainer-list");
 const dialogueBox = document.querySelector(".dialogue-box");
+const researcherName = document.body.dataset.researcherName ||
+    window.localStorage.getItem("pokelab-researcher-name") || "INVESTIGADOR";
 
-// Introducción del Profesor Oak
 const dialogues = [
-    "¡Bienvenido al laboratorio Pokémon!",
+    `¡Bienvenido al laboratorio Pokémon, ${researcherName}!`,
     "Soy el Profesor Oak, y necesito tu ayuda con algunas investigaciones.",
     "Aquí podrás consultar información, analizar Pokémon y registrar nuevos descubrimientos.",
     "También tendrás que resolver solicitudes de los entrenadores que visiten el laboratorio.",
@@ -16,54 +15,39 @@ const dialogues = [
 ];
 
 let currentDialogue = 0;
+let dialogueMode = "introduction";
 
-// Avanzar la introducción
 nextButton.addEventListener("click", () => {
+    if (dialogueMode === "request") {
+        dialogueMode = "trainers";
+        dialogueBox.classList.add("hidden");
+        trainerList.classList.remove("hidden");
+        nextButton.textContent = "SIGUIENTE ▼";
+        return;
+    }
 
     currentDialogue++;
 
     if (currentDialogue < dialogues.length) {
         dialogueText.textContent = dialogues[currentDialogue];
-
-    } else {
-        // Finalizar introducción y mostrar entrenadores
-        oakPlaceholder.classList.add("hidden");
-        dialogueBox.classList.add("hidden");
-        trainerList.classList.remove("hidden");
+        return;
     }
+
+    dialogueMode = "trainers";
+    oakCharacter.classList.add("hidden");
+    dialogueBox.classList.add("hidden");
+    trainerList.classList.remove("hidden");
 });
 
-// Seleccionar un entrenador
-const trainerButtons = document.querySelectorAll(".trainer-option");
-
-trainerButtons.forEach((button) => {
-
+document.querySelectorAll(".trainer-option").forEach((button) => {
     button.addEventListener("click", () => {
-
         const trainer = button.dataset.trainer;
         const request = button.dataset.request;
 
-        // Ocultar entrenadores y mostrar solicitud
         trainerList.classList.add("hidden");
         dialogueBox.classList.remove("hidden");
-
-        dialogueText.textContent =
-            `${trainer}: ${request}`;
-
+        dialogueText.textContent = `${trainer}: ${request}`;
         nextButton.textContent = "VOLVER";
+        dialogueMode = "request";
     });
-
-});
-
-// Volver a la lista de entrenadores
-nextButton.addEventListener("click", () => {
-
-    if (nextButton.textContent === "VOLVER") {
-
-        dialogueBox.classList.add("hidden");
-        trainerList.classList.remove("hidden");
-
-        nextButton.textContent = "SIGUIENTE ▼";
-    }
-
 });

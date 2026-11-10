@@ -7,7 +7,32 @@
 
 <div class="game-container">
 
-    <section class="laboratory">
+    <!-- Selector de nombre inspirado en la pantalla de entrada de Pokémon -->
+    <section id="name-selector" class="name-selector-screen" aria-labelledby="name-selector-title">
+
+        <div class="name-selector-panel">
+            <div class="name-selector-prompt">
+                <p id="name-selector-title">¿CUÁL ES TU NOMBRE?</p>
+                <div class="name-display" aria-live="polite">
+                    <span id="name-display-text">NUNEZ</span><span class="name-caret">▼</span>
+                </div>
+            </div>
+
+            <div class="name-entry-layout">
+                <div id="name-keyboard" class="name-keyboard" aria-label="Selector de letras"></div>
+
+                <div class="name-actions">
+                    <button id="name-backspace" class="name-action" type="button">◀ BORRAR</button>
+                    <button id="name-confirm" class="name-action primary" type="button">OK ▶</button>
+                </div>
+            </div>
+
+            <p class="name-selector-help">Seleccioná las letras y confirmá tu nombre, investigador.</p>
+        </div>
+
+    </section>
+
+    <section id="laboratory" class="laboratory hidden" aria-live="polite">
 
         <!-- Acceso al cuaderno -->
         <button id="notebook-button" class="notebook-button">
@@ -114,6 +139,7 @@
 {% endblock %}
 
 {% block scripts %}
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
 <script src="{{ url_for('static', filename='js/dialogue.js') }}"></script>
 <script src="{{ url_for('static', filename='js/notebook.js') }}"></script>
 {% endblock %}
