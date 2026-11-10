@@ -1,69 +1,65 @@
-// Elementos del laboratorio
-const dialogueText = document.getElementById("dialogue-text");
-const nextButton = document.getElementById("next-dialogue");
+// Cuadro de diálogo del laboratorio.
+// Muestra una lista de líneas (botón SIGUIENTE) y, al final, botones de acción opcionales.
+const Dialogo = (() => {
+    const caja = document.querySelector(".dialogue-box");
+    const texto = document.getElementById("dialogue-text");
+    const siguiente = document.getElementById("next-dialogue");
+    const acciones = document.getElementById("dialogue-actions");
 
-const oakPlaceholder = document.querySelector(".oak-placeholder");
-const trainerList = document.getElementById("trainer-list");
-const dialogueBox = document.querySelector(".dialogue-box");
+    let lineas = [];
+    let indice = 0;
+    let opcionesActuales = {};
 
-// Introducción del Profesor Oak
-const dialogues = [
-    "¡Bienvenido al laboratorio Pokémon!",
-    "Soy el Profesor Oak, y necesito tu ayuda con algunas investigaciones.",
-    "Aquí podrás consultar información, analizar Pokémon y registrar nuevos descubrimientos.",
-    "También tendrás que resolver solicitudes de los entrenadores que visiten el laboratorio.",
-    "¡Tu trabajo como investigador comienza ahora!"
-];
+    function pintar() {
+        texto.textContent = lineas[indice];
+        const esUltima = indice === lineas.length - 1;
+        acciones.innerHTML = "";
 
-let currentDialogue = 0;
+        if (!esUltima) {
+            siguiente.classList.remove("hidden");
+            siguiente.textContent = "SIGUIENTE ▼";
+            return;
+        }
 
-// Avanzar la introducción
-nextButton.addEventListener("click", () => {
-
-    currentDialogue++;
-
-    if (currentDialogue < dialogues.length) {
-        dialogueText.textContent = dialogues[currentDialogue];
-
-    } else {
-        // Finalizar introducción y mostrar entrenadores
-        oakPlaceholder.classList.add("hidden");
-        dialogueBox.classList.add("hidden");
-        trainerList.classList.remove("hidden");
+        const botones = opcionesActuales.botones || [];
+        if (botones.length) {
+            siguiente.classList.add("hidden");
+            botones.forEach((boton) => {
+                const elemento = document.createElement("button");
+                elemento.type = "button";
+                elemento.className = "dialogue-action";
+                elemento.textContent = boton.texto;
+                elemento.addEventListener("click", boton.accion);
+                acciones.appendChild(elemento);
+            });
+        } else {
+            siguiente.classList.remove("hidden");
+            siguiente.textContent = opcionesActuales.textoFinal || "SIGUIENTE ▼";
+        }
     }
-});
 
-// Seleccionar un entrenador
-const trainerButtons = document.querySelectorAll(".trainer-option");
-
-trainerButtons.forEach((button) => {
-
-    button.addEventListener("click", () => {
-
-        const trainer = button.dataset.trainer;
-        const request = button.dataset.request;
-
-        // Ocultar entrenadores y mostrar solicitud
-        trainerList.classList.add("hidden");
-        dialogueBox.classList.remove("hidden");
-
-        dialogueText.textContent =
-            `${trainer}: ${request}`;
-
-        nextButton.textContent = "VOLVER";
+    siguiente.addEventListener("click", () => {
+        if (indice < lineas.length - 1) {
+            indice++;
+            pintar();
+            return;
+        }
+        const alTerminar = opcionesActuales.alTerminar;
+        if (!opcionesActuales.botones?.length) {
+            if (alTerminar) alTerminar();
+        }
     });
 
-});
-
-// Volver a la lista de entrenadores
-nextButton.addEventListener("click", () => {
-
-    if (nextButton.textContent === "VOLVER") {
-
-        dialogueBox.classList.add("hidden");
-        trainerList.classList.remove("hidden");
-
-        nextButton.textContent = "SIGUIENTE ▼";
-    }
-
-});
+    return {
+        mostrar(nuevasLineas, opciones = {}) {
+            lineas = Array.isArray(nuevasLineas) ? nuevasLineas : [nuevasLineas];
+            indice = 0;
+            opcionesActuales = opciones;
+            caja.classList.remove("hidden");
+            pintar();
+        },
+        ocultar() {
+            caja.classList.add("hidden");
+        },
+    };
+})();

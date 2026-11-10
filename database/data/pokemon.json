@@ -1,0 +1,2801 @@
+[
+  {
+    "numero": 1,
+    "sprite": "1.png",
+    "nombre": "Bulbasaur",
+    "generacion": 1,
+    "tipos": [
+      "Planta",
+      "Veneno"
+    ],
+    "estadisticas": {
+      "ps": 45,
+      "ataque": 49,
+      "defensa": 49,
+      "ataque_especial": 65,
+      "defensa_especial": 65,
+      "velocidad": 45
+    },
+    "habilidades": [
+      {
+        "nombre": "Espesura",
+        "oculta": false
+      },
+      {
+        "nombre": "Clorofila",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Placaje",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Látigo Cepa",
+        "tipo": "Planta",
+        "categoria": "Físico",
+        "potencia": 45
+      },
+      {
+        "nombre": "Somnífero",
+        "tipo": "Planta",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Gigadrenado",
+        "tipo": "Planta",
+        "categoria": "Especial",
+        "potencia": 75
+      },
+      {
+        "nombre": "Bomba Lodo",
+        "tipo": "Veneno",
+        "categoria": "Especial",
+        "potencia": 90
+      }
+    ]
+  },
+  {
+    "numero": 3,
+    "sprite": "3.png",
+    "nombre": "Venusaur",
+    "generacion": 1,
+    "tipos": [
+      "Planta",
+      "Veneno"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 82,
+      "defensa": 83,
+      "ataque_especial": 100,
+      "defensa_especial": 100,
+      "velocidad": 80
+    },
+    "habilidades": [
+      {
+        "nombre": "Espesura",
+        "oculta": false
+      },
+      {
+        "nombre": "Clorofila",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Energibola",
+        "tipo": "Planta",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Bomba Lodo",
+        "tipo": "Veneno",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Gigadrenado",
+        "tipo": "Planta",
+        "categoria": "Especial",
+        "potencia": 75
+      },
+      {
+        "nombre": "Somnífero",
+        "tipo": "Planta",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Terremoto",
+        "tipo": "Tierra",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Rayo Solar",
+        "tipo": "Planta",
+        "categoria": "Especial",
+        "potencia": 120
+      }
+    ]
+  },
+  {
+    "numero": 4,
+    "sprite": "4.png",
+    "nombre": "Charmander",
+    "generacion": 1,
+    "tipos": [
+      "Fuego"
+    ],
+    "estadisticas": {
+      "ps": 39,
+      "ataque": 52,
+      "defensa": 43,
+      "ataque_especial": 60,
+      "defensa_especial": 50,
+      "velocidad": 65
+    },
+    "habilidades": [
+      {
+        "nombre": "Mar Llamas",
+        "oculta": false
+      },
+      {
+        "nombre": "Poder Solar",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Arañazo",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Ascuas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 40
+      },
+      {
+        "nombre": "Colmillo Ígneo",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 65
+      },
+      {
+        "nombre": "Lanzallamas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 90
+      }
+    ]
+  },
+  {
+    "numero": 6,
+    "sprite": "6.png",
+    "nombre": "Charizard",
+    "generacion": 1,
+    "tipos": [
+      "Fuego",
+      "Volador"
+    ],
+    "estadisticas": {
+      "ps": 78,
+      "ataque": 84,
+      "defensa": 78,
+      "ataque_especial": 109,
+      "defensa_especial": 85,
+      "velocidad": 100
+    },
+    "habilidades": [
+      {
+        "nombre": "Mar Llamas",
+        "oculta": false
+      },
+      {
+        "nombre": "Poder Solar",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Lanzallamas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Llamarada",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 110
+      },
+      {
+        "nombre": "Envite Ígneo",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 120
+      },
+      {
+        "nombre": "Tajo Aéreo",
+        "tipo": "Volador",
+        "categoria": "Especial",
+        "potencia": 75
+      },
+      {
+        "nombre": "Garra Dragón",
+        "tipo": "Dragón",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Terremoto",
+        "tipo": "Tierra",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Respiro",
+        "tipo": "Volador",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Danza Dragón",
+        "tipo": "Dragón",
+        "categoria": "Estado"
+      }
+    ],
+    "formas": [
+      {
+        "nombre": "Mega Charizard X",
+        "tipos": [
+          "Fuego",
+          "Dragón"
+        ],
+        "estadisticas": {
+          "ps": 78,
+          "ataque": 130,
+          "defensa": 111,
+          "ataque_especial": 130,
+          "defensa_especial": 85,
+          "velocidad": 100
+        },
+        "habilidad": "Garra Dura",
+        "objeto_requerido": "Charizardita X",
+        "registrada_por": "Profesor Oak"
+      }
+    ]
+  },
+  {
+    "numero": 7,
+    "sprite": "7.png",
+    "nombre": "Squirtle",
+    "generacion": 1,
+    "tipos": [
+      "Agua"
+    ],
+    "estadisticas": {
+      "ps": 44,
+      "ataque": 48,
+      "defensa": 65,
+      "ataque_especial": 50,
+      "defensa_especial": 64,
+      "velocidad": 43
+    },
+    "habilidades": [
+      {
+        "nombre": "Torrente",
+        "oculta": false
+      },
+      {
+        "nombre": "Cura Lluvia",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Placaje",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Pistola Agua",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 40
+      },
+      {
+        "nombre": "Mordisco",
+        "tipo": "Siniestro",
+        "categoria": "Físico",
+        "potencia": 60
+      },
+      {
+        "nombre": "Hidropulso",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 60
+      }
+    ]
+  },
+  {
+    "numero": 9,
+    "sprite": "9.png",
+    "nombre": "Blastoise",
+    "generacion": 1,
+    "tipos": [
+      "Agua"
+    ],
+    "estadisticas": {
+      "ps": 79,
+      "ataque": 83,
+      "defensa": 100,
+      "ataque_especial": 85,
+      "defensa_especial": 105,
+      "velocidad": 78
+    },
+    "habilidades": [
+      {
+        "nombre": "Torrente",
+        "oculta": false
+      },
+      {
+        "nombre": "Cura Lluvia",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Surf",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Hidrobomba",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 110
+      },
+      {
+        "nombre": "Rayo Hielo",
+        "tipo": "Hielo",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Foco Resplandor",
+        "tipo": "Acero",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Terremoto",
+        "tipo": "Tierra",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 25,
+    "sprite": "25.png",
+    "nombre": "Pikachu",
+    "generacion": 1,
+    "tipos": [
+      "Eléctrico"
+    ],
+    "estadisticas": {
+      "ps": 35,
+      "ataque": 55,
+      "defensa": 40,
+      "ataque_especial": 50,
+      "defensa_especial": 50,
+      "velocidad": 90
+    },
+    "habilidades": [
+      {
+        "nombre": "Electricidad Estática",
+        "oculta": false
+      },
+      {
+        "nombre": "Pararrayos",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Impactrueno",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 40
+      },
+      {
+        "nombre": "Rayo",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Voltio Cruel",
+        "tipo": "Eléctrico",
+        "categoria": "Físico",
+        "potencia": 120
+      },
+      {
+        "nombre": "Ataque Rápido",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Cola Férrea",
+        "tipo": "Acero",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Onda Trueno",
+        "tipo": "Eléctrico",
+        "categoria": "Estado"
+      }
+    ],
+    "curiosidades": [
+      "Es la mascota de la franquicia",
+      "Almacena electricidad en sus mejillas"
+    ]
+  },
+  {
+    "numero": 26,
+    "sprite": "26.png",
+    "nombre": "Raichu",
+    "generacion": 1,
+    "tipos": [
+      "Eléctrico"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 90,
+      "defensa": 55,
+      "ataque_especial": 90,
+      "defensa_especial": 80,
+      "velocidad": 110
+    },
+    "habilidades": [
+      {
+        "nombre": "Electricidad Estática",
+        "oculta": false
+      },
+      {
+        "nombre": "Pararrayos",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Rayo",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Trueno",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 110
+      },
+      {
+        "nombre": "Voltiocambio",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 70
+      },
+      {
+        "nombre": "Puño Trueno",
+        "tipo": "Eléctrico",
+        "categoria": "Físico",
+        "potencia": 75
+      },
+      {
+        "nombre": "Onda Certera",
+        "tipo": "Lucha",
+        "categoria": "Especial",
+        "potencia": 120
+      },
+      {
+        "nombre": "Onda Trueno",
+        "tipo": "Eléctrico",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 35,
+    "sprite": "35.png",
+    "nombre": "Clefairy",
+    "generacion": 1,
+    "tipos": [
+      "Hada"
+    ],
+    "estadisticas": {
+      "ps": 70,
+      "ataque": 45,
+      "defensa": 48,
+      "ataque_especial": 60,
+      "defensa_especial": 65,
+      "velocidad": 35
+    },
+    "habilidades": [
+      {
+        "nombre": "Gran Encanto",
+        "oculta": false
+      },
+      {
+        "nombre": "Muro Mágico",
+        "oculta": false
+      },
+      {
+        "nombre": "Compiescolta",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Señuelo",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Fuerza Lunar",
+        "tipo": "Hada",
+        "categoria": "Especial",
+        "potencia": 95
+      },
+      {
+        "nombre": "Deseo",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 36,
+    "sprite": "36.png",
+    "nombre": "Clefable",
+    "generacion": 1,
+    "tipos": [
+      "Hada"
+    ],
+    "estadisticas": {
+      "ps": 95,
+      "ataque": 70,
+      "defensa": 73,
+      "ataque_especial": 95,
+      "defensa_especial": 90,
+      "velocidad": 60
+    },
+    "habilidades": [
+      {
+        "nombre": "Gran Encanto",
+        "oculta": false
+      },
+      {
+        "nombre": "Muro Mágico",
+        "oculta": false
+      },
+      {
+        "nombre": "Ignorante",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Señuelo",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Fuerza Lunar",
+        "tipo": "Hada",
+        "categoria": "Especial",
+        "potencia": 95
+      },
+      {
+        "nombre": "Brillo Mágico",
+        "tipo": "Hada",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Lanzallamas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Deseo",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 37,
+    "sprite": "37.png",
+    "nombre": "Vulpix",
+    "generacion": 1,
+    "tipos": [
+      "Fuego"
+    ],
+    "estadisticas": {
+      "ps": 38,
+      "ataque": 41,
+      "defensa": 40,
+      "ataque_especial": 50,
+      "defensa_especial": 65,
+      "velocidad": 65
+    },
+    "habilidades": [
+      {
+        "nombre": "Absorbe Fuego",
+        "oculta": false
+      },
+      {
+        "nombre": "Sequía",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Ascuas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 40
+      },
+      {
+        "nombre": "Ataque Rápido",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Fuego Fatuo",
+        "tipo": "Fuego",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Lanzallamas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 90
+      }
+    ]
+  },
+  {
+    "numero": 54,
+    "sprite": "54.png",
+    "nombre": "Psyduck",
+    "generacion": 1,
+    "tipos": [
+      "Agua"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 52,
+      "defensa": 48,
+      "ataque_especial": 65,
+      "defensa_especial": 50,
+      "velocidad": 55
+    },
+    "habilidades": [
+      {
+        "nombre": "Humedad",
+        "oculta": false
+      },
+      {
+        "nombre": "Aclimatación",
+        "oculta": false
+      },
+      {
+        "nombre": "Nado Rápido",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Pistola Agua",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 40
+      },
+      {
+        "nombre": "Confusión",
+        "tipo": "Psíquico",
+        "categoria": "Especial",
+        "potencia": 50
+      },
+      {
+        "nombre": "Surf",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Rayo Hielo",
+        "tipo": "Hielo",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Danza Lluvia",
+        "tipo": "Agua",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 55,
+    "sprite": "55.png",
+    "nombre": "Golduck",
+    "generacion": 1,
+    "tipos": [
+      "Agua"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 82,
+      "defensa": 78,
+      "ataque_especial": 95,
+      "defensa_especial": 80,
+      "velocidad": 85
+    },
+    "habilidades": [
+      {
+        "nombre": "Humedad",
+        "oculta": false
+      },
+      {
+        "nombre": "Aclimatación",
+        "oculta": false
+      },
+      {
+        "nombre": "Nado Rápido",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Surf",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Hidrobomba",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 110
+      },
+      {
+        "nombre": "Rayo Hielo",
+        "tipo": "Hielo",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Psíquico",
+        "tipo": "Psíquico",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Danza Lluvia",
+        "tipo": "Agua",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 58,
+    "sprite": "58.png",
+    "nombre": "Growlithe",
+    "generacion": 1,
+    "tipos": [
+      "Fuego"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 70,
+      "defensa": 45,
+      "ataque_especial": 70,
+      "defensa_especial": 50,
+      "velocidad": 60
+    },
+    "habilidades": [
+      {
+        "nombre": "Intimidación",
+        "oculta": false
+      },
+      {
+        "nombre": "Absorbe Fuego",
+        "oculta": false
+      },
+      {
+        "nombre": "Justiciero",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Mordisco",
+        "tipo": "Siniestro",
+        "categoria": "Físico",
+        "potencia": 60
+      },
+      {
+        "nombre": "Ascuas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 40
+      },
+      {
+        "nombre": "Colmillo Ígneo",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 65
+      },
+      {
+        "nombre": "Velocidad Extrema",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Lanzallamas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 90
+      }
+    ]
+  },
+  {
+    "numero": 59,
+    "sprite": "59.png",
+    "nombre": "Arcanine",
+    "generacion": 1,
+    "tipos": [
+      "Fuego"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 110,
+      "defensa": 80,
+      "ataque_especial": 100,
+      "defensa_especial": 80,
+      "velocidad": 95
+    },
+    "habilidades": [
+      {
+        "nombre": "Intimidación",
+        "oculta": false
+      },
+      {
+        "nombre": "Absorbe Fuego",
+        "oculta": false
+      },
+      {
+        "nombre": "Justiciero",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Envite Ígneo",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 120
+      },
+      {
+        "nombre": "Velocidad Extrema",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Lanzallamas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Colmillo Ígneo",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 65
+      },
+      {
+        "nombre": "Triturar",
+        "tipo": "Siniestro",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 62,
+    "sprite": "62.png",
+    "nombre": "Poliwrath",
+    "generacion": 1,
+    "tipos": [
+      "Agua",
+      "Lucha"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 95,
+      "defensa": 95,
+      "ataque_especial": 70,
+      "defensa_especial": 90,
+      "velocidad": 70
+    },
+    "habilidades": [
+      {
+        "nombre": "Absorbe Agua",
+        "oculta": false
+      },
+      {
+        "nombre": "Humedad",
+        "oculta": false
+      },
+      {
+        "nombre": "Nado Rápido",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Cascada",
+        "tipo": "Agua",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Hidroariete",
+        "tipo": "Agua",
+        "categoria": "Físico",
+        "potencia": 85
+      },
+      {
+        "nombre": "Puño Dinámico",
+        "tipo": "Lucha",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Puño Hielo",
+        "tipo": "Hielo",
+        "categoria": "Físico",
+        "potencia": 75
+      },
+      {
+        "nombre": "Hipnosis",
+        "tipo": "Psíquico",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Danza Lluvia",
+        "tipo": "Agua",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 65,
+    "sprite": "65.png",
+    "nombre": "Alakazam",
+    "generacion": 1,
+    "tipos": [
+      "Psíquico"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 50,
+      "defensa": 45,
+      "ataque_especial": 135,
+      "defensa_especial": 95,
+      "velocidad": 120
+    },
+    "habilidades": [
+      {
+        "nombre": "Sincronía",
+        "oculta": false
+      },
+      {
+        "nombre": "Foco Interno",
+        "oculta": false
+      },
+      {
+        "nombre": "Muro Mágico",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Psíquico",
+        "tipo": "Psíquico",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Psicocarga",
+        "tipo": "Psíquico",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Bola Sombra",
+        "tipo": "Fantasma",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Onda Certera",
+        "tipo": "Lucha",
+        "categoria": "Especial",
+        "potencia": 120
+      },
+      {
+        "nombre": "Energibola",
+        "tipo": "Planta",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Recuperación",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 68,
+    "sprite": "68.png",
+    "nombre": "Machamp",
+    "generacion": 1,
+    "tipos": [
+      "Lucha"
+    ],
+    "estadisticas": {
+      "ps": 90,
+      "ataque": 130,
+      "defensa": 80,
+      "ataque_especial": 65,
+      "defensa_especial": 85,
+      "velocidad": 55
+    },
+    "habilidades": [
+      {
+        "nombre": "Agallas",
+        "oculta": false
+      },
+      {
+        "nombre": "Indefenso",
+        "oculta": false
+      },
+      {
+        "nombre": "Impasible",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Puño Dinámico",
+        "tipo": "Lucha",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "A Bocajarro",
+        "tipo": "Lucha",
+        "categoria": "Físico",
+        "potencia": 120
+      },
+      {
+        "nombre": "Roca Afilada",
+        "tipo": "Roca",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Puño Hielo",
+        "tipo": "Hielo",
+        "categoria": "Físico",
+        "potencia": 75
+      },
+      {
+        "nombre": "Puño Fuego",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 75
+      },
+      {
+        "nombre": "Corpulencia",
+        "tipo": "Lucha",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 77,
+    "sprite": "77.png",
+    "nombre": "Ponyta",
+    "generacion": 1,
+    "tipos": [
+      "Fuego"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 85,
+      "defensa": 55,
+      "ataque_especial": 65,
+      "defensa_especial": 65,
+      "velocidad": 90
+    },
+    "habilidades": [
+      {
+        "nombre": "Fuga",
+        "oculta": false
+      },
+      {
+        "nombre": "Absorbe Fuego",
+        "oculta": false
+      },
+      {
+        "nombre": "Cuerpo Llama",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Placaje",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Ascuas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 40
+      },
+      {
+        "nombre": "Nitrocarga",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 50
+      },
+      {
+        "nombre": "Envite Ígneo",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 120
+      }
+    ]
+  },
+  {
+    "numero": 94,
+    "sprite": "94.png",
+    "nombre": "Gengar",
+    "generacion": 1,
+    "tipos": [
+      "Fantasma",
+      "Veneno"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 65,
+      "defensa": 60,
+      "ataque_especial": 130,
+      "defensa_especial": 75,
+      "velocidad": 110
+    },
+    "habilidades": [
+      {
+        "nombre": "Cuerpo Maldito",
+        "oculta": false
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Bola Sombra",
+        "tipo": "Fantasma",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Bomba Lodo",
+        "tipo": "Veneno",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Onda Certera",
+        "tipo": "Lucha",
+        "categoria": "Especial",
+        "potencia": 120
+      },
+      {
+        "nombre": "Rayo",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Hipnosis",
+        "tipo": "Psíquico",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Mismodestino",
+        "tipo": "Fantasma",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 129,
+    "sprite": "129.png",
+    "nombre": "Magikarp",
+    "generacion": 1,
+    "tipos": [
+      "Agua"
+    ],
+    "estadisticas": {
+      "ps": 20,
+      "ataque": 10,
+      "defensa": 55,
+      "ataque_especial": 15,
+      "defensa_especial": 20,
+      "velocidad": 80
+    },
+    "habilidades": [
+      {
+        "nombre": "Nado Rápido",
+        "oculta": false
+      },
+      {
+        "nombre": "Cobardía",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Salpicadura",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Placaje",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 40
+      }
+    ]
+  },
+  {
+    "numero": 130,
+    "sprite": "130.png",
+    "nombre": "Gyarados",
+    "generacion": 1,
+    "tipos": [
+      "Agua",
+      "Volador"
+    ],
+    "estadisticas": {
+      "ps": 95,
+      "ataque": 125,
+      "defensa": 79,
+      "ataque_especial": 60,
+      "defensa_especial": 100,
+      "velocidad": 81
+    },
+    "habilidades": [
+      {
+        "nombre": "Intimidación",
+        "oculta": false
+      },
+      {
+        "nombre": "Autoestima",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Cascada",
+        "tipo": "Agua",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Danza Dragón",
+        "tipo": "Dragón",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Terremoto",
+        "tipo": "Tierra",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Triturar",
+        "tipo": "Siniestro",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Colmillo Hielo",
+        "tipo": "Hielo",
+        "categoria": "Físico",
+        "potencia": 65
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ],
+    "evoluciona_de": "Magikarp"
+  },
+  {
+    "numero": 131,
+    "sprite": "131.png",
+    "nombre": "Lapras",
+    "generacion": 1,
+    "tipos": [
+      "Agua",
+      "Hielo"
+    ],
+    "estadisticas": {
+      "ps": 130,
+      "ataque": 85,
+      "defensa": 80,
+      "ataque_especial": 85,
+      "defensa_especial": 95,
+      "velocidad": 60
+    },
+    "habilidades": [
+      {
+        "nombre": "Absorbe Agua",
+        "oculta": false
+      },
+      {
+        "nombre": "Caparazón",
+        "oculta": false
+      },
+      {
+        "nombre": "Hidratación",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Surf",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Rayo Hielo",
+        "tipo": "Hielo",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Ventisca",
+        "tipo": "Hielo",
+        "categoria": "Especial",
+        "potencia": 110
+      },
+      {
+        "nombre": "Hidrobomba",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 110
+      },
+      {
+        "nombre": "Golpe Cuerpo",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 85
+      }
+    ]
+  },
+  {
+    "numero": 132,
+    "sprite": "132.png",
+    "nombre": "Ditto",
+    "generacion": 1,
+    "tipos": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 48,
+      "ataque": 48,
+      "defensa": 48,
+      "ataque_especial": 48,
+      "defensa_especial": 48,
+      "velocidad": 48
+    },
+    "habilidades": [
+      {
+        "nombre": "Flexibilidad",
+        "oculta": false
+      },
+      {
+        "nombre": "Impostor",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Transformación",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ],
+    "puede_transformarse": true
+  },
+  {
+    "numero": 133,
+    "sprite": "133.png",
+    "nombre": "Eevee",
+    "generacion": 1,
+    "tipos": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 55,
+      "ataque": 55,
+      "defensa": 50,
+      "ataque_especial": 45,
+      "defensa_especial": 65,
+      "velocidad": 55
+    },
+    "habilidades": [
+      {
+        "nombre": "Fuga",
+        "oculta": false
+      },
+      {
+        "nombre": "Adaptable",
+        "oculta": false
+      },
+      {
+        "nombre": "Anticipación",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Placaje",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Ataque Rápido",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Mordisco",
+        "tipo": "Siniestro",
+        "categoria": "Físico",
+        "potencia": 60
+      },
+      {
+        "nombre": "Golpe Cuerpo",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 85
+      },
+      {
+        "nombre": "Deseo",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ],
+    "evoluciones_posibles": [
+      "Vaporeon",
+      "Jolteon",
+      "Flareon",
+      "Espeon",
+      "Umbreon",
+      "Leafeon",
+      "Glaceon",
+      "Sylveon"
+    ]
+  },
+  {
+    "numero": 141,
+    "sprite": "141.png",
+    "nombre": "Kabutops",
+    "generacion": 1,
+    "tipos": [
+      "Roca",
+      "Agua"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 115,
+      "defensa": 105,
+      "ataque_especial": 65,
+      "defensa_especial": 70,
+      "velocidad": 80
+    },
+    "habilidades": [
+      {
+        "nombre": "Nado Rápido",
+        "oculta": false
+      },
+      {
+        "nombre": "Armadura Batalla",
+        "oculta": false
+      },
+      {
+        "nombre": "Armadura Frágil",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Cascada",
+        "tipo": "Agua",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Roca Afilada",
+        "tipo": "Roca",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Avalancha",
+        "tipo": "Roca",
+        "categoria": "Físico",
+        "potencia": 75
+      },
+      {
+        "nombre": "Acua Jet",
+        "tipo": "Agua",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Tajo Umbrío",
+        "tipo": "Siniestro",
+        "categoria": "Físico",
+        "potencia": 70
+      },
+      {
+        "nombre": "Danza Espada",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ],
+    "fosil": "Fósil Domo"
+  },
+  {
+    "numero": 143,
+    "sprite": "143.png",
+    "nombre": "Snorlax",
+    "generacion": 1,
+    "tipos": [
+      "Normal"
+    ],
+    "estadisticas": {
+      "ps": 160,
+      "ataque": 110,
+      "defensa": 65,
+      "ataque_especial": 65,
+      "defensa_especial": 110,
+      "velocidad": 30
+    },
+    "habilidades": [
+      {
+        "nombre": "Inmunidad",
+        "oculta": false
+      },
+      {
+        "nombre": "Sebo",
+        "oculta": false
+      },
+      {
+        "nombre": "Gula",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Golpe Cuerpo",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 85
+      },
+      {
+        "nombre": "Descanso",
+        "tipo": "Psíquico",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Terremoto",
+        "tipo": "Tierra",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Triturar",
+        "tipo": "Siniestro",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Puño Hielo",
+        "tipo": "Hielo",
+        "categoria": "Físico",
+        "potencia": 75
+      },
+      {
+        "nombre": "Gigaimpacto",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 150
+      }
+    ]
+  },
+  {
+    "numero": 149,
+    "sprite": "149.png",
+    "nombre": "Dragonite",
+    "generacion": 1,
+    "tipos": [
+      "Dragón",
+      "Volador"
+    ],
+    "estadisticas": {
+      "ps": 91,
+      "ataque": 134,
+      "defensa": 95,
+      "ataque_especial": 100,
+      "defensa_especial": 100,
+      "velocidad": 80
+    },
+    "habilidades": [
+      {
+        "nombre": "Foco Interno",
+        "oculta": false
+      },
+      {
+        "nombre": "Compensación",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Enfado",
+        "tipo": "Dragón",
+        "categoria": "Físico",
+        "potencia": 120
+      },
+      {
+        "nombre": "Velocidad Extrema",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Danza Dragón",
+        "tipo": "Dragón",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Terremoto",
+        "tipo": "Tierra",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Puño Fuego",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 75
+      },
+      {
+        "nombre": "Vuelo",
+        "tipo": "Volador",
+        "categoria": "Físico",
+        "potencia": 90
+      },
+      {
+        "nombre": "Respiro",
+        "tipo": "Volador",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 150,
+    "sprite": "150.png",
+    "nombre": "Mewtwo",
+    "generacion": 1,
+    "tipos": [
+      "Psíquico"
+    ],
+    "estadisticas": {
+      "ps": 106,
+      "ataque": 110,
+      "defensa": 90,
+      "ataque_especial": 154,
+      "defensa_especial": 90,
+      "velocidad": 130
+    },
+    "habilidades": [
+      {
+        "nombre": "Presión",
+        "oculta": false
+      },
+      {
+        "nombre": "Nerviosismo",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Psíquico",
+        "tipo": "Psíquico",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Bola Sombra",
+        "tipo": "Fantasma",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Esfera Aural",
+        "tipo": "Lucha",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Rayo Hielo",
+        "tipo": "Hielo",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Onda Certera",
+        "tipo": "Lucha",
+        "categoria": "Especial",
+        "potencia": 120
+      },
+      {
+        "nombre": "Recuperación",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ],
+    "legendario": true,
+    "formas": [
+      {
+        "nombre": "Mega Mewtwo X",
+        "tipos": [
+          "Psíquico",
+          "Lucha"
+        ],
+        "estadisticas": {
+          "ps": 106,
+          "ataque": 190,
+          "defensa": 100,
+          "ataque_especial": 154,
+          "defensa_especial": 100,
+          "velocidad": 130
+        },
+        "habilidad": "Impasible",
+        "objeto_requerido": "Mewtwonita X",
+        "registrada_por": "Profesor Oak"
+      }
+    ]
+  },
+  {
+    "numero": 212,
+    "sprite": "212.png",
+    "nombre": "Scizor",
+    "generacion": 2,
+    "tipos": [
+      "Bicho",
+      "Acero"
+    ],
+    "estadisticas": {
+      "ps": 70,
+      "ataque": 130,
+      "defensa": 100,
+      "ataque_especial": 55,
+      "defensa_especial": 80,
+      "velocidad": 65
+    },
+    "habilidades": [
+      {
+        "nombre": "Enjambre",
+        "oculta": false
+      },
+      {
+        "nombre": "Experto",
+        "oculta": false
+      },
+      {
+        "nombre": "Metal Liviano",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Puño Bala",
+        "tipo": "Acero",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Tijera X",
+        "tipo": "Bicho",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Ida y Vuelta",
+        "tipo": "Bicho",
+        "categoria": "Físico",
+        "potencia": 70
+      },
+      {
+        "nombre": "Tajo Umbrío",
+        "tipo": "Siniestro",
+        "categoria": "Físico",
+        "potencia": 70
+      },
+      {
+        "nombre": "Danza Espada",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Respiro",
+        "tipo": "Volador",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 230,
+    "sprite": "230.png",
+    "nombre": "Kingdra",
+    "generacion": 2,
+    "tipos": [
+      "Agua",
+      "Dragón"
+    ],
+    "estadisticas": {
+      "ps": 75,
+      "ataque": 95,
+      "defensa": 95,
+      "ataque_especial": 95,
+      "defensa_especial": 95,
+      "velocidad": 85
+    },
+    "habilidades": [
+      {
+        "nombre": "Nado Rápido",
+        "oculta": false
+      },
+      {
+        "nombre": "Francotirador",
+        "oculta": false
+      },
+      {
+        "nombre": "Humedad",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Surf",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Hidrobomba",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 110
+      },
+      {
+        "nombre": "Pulso Dragón",
+        "tipo": "Dragón",
+        "categoria": "Especial",
+        "potencia": 85
+      },
+      {
+        "nombre": "Rayo Hielo",
+        "tipo": "Hielo",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Cascada",
+        "tipo": "Agua",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Danza Lluvia",
+        "tipo": "Agua",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Danza Dragón",
+        "tipo": "Dragón",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 248,
+    "sprite": "248.png",
+    "nombre": "Tyranitar",
+    "generacion": 2,
+    "tipos": [
+      "Roca",
+      "Siniestro"
+    ],
+    "estadisticas": {
+      "ps": 100,
+      "ataque": 134,
+      "defensa": 110,
+      "ataque_especial": 95,
+      "defensa_especial": 100,
+      "velocidad": 61
+    },
+    "habilidades": [
+      {
+        "nombre": "Chorro Arena",
+        "oculta": false
+      },
+      {
+        "nombre": "Nerviosismo",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Triturar",
+        "tipo": "Siniestro",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Roca Afilada",
+        "tipo": "Roca",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Avalancha",
+        "tipo": "Roca",
+        "categoria": "Físico",
+        "potencia": 75
+      },
+      {
+        "nombre": "Terremoto",
+        "tipo": "Tierra",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Pulso Umbrío",
+        "tipo": "Siniestro",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Danza Dragón",
+        "tipo": "Dragón",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 272,
+    "sprite": "272.png",
+    "nombre": "Ludicolo",
+    "generacion": 3,
+    "tipos": [
+      "Agua",
+      "Planta"
+    ],
+    "estadisticas": {
+      "ps": 80,
+      "ataque": 70,
+      "defensa": 70,
+      "ataque_especial": 90,
+      "defensa_especial": 100,
+      "velocidad": 70
+    },
+    "habilidades": [
+      {
+        "nombre": "Nado Rápido",
+        "oculta": false
+      },
+      {
+        "nombre": "Cura Lluvia",
+        "oculta": false
+      },
+      {
+        "nombre": "Ritmo Propio",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Surf",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Hidrobomba",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 110
+      },
+      {
+        "nombre": "Gigadrenado",
+        "tipo": "Planta",
+        "categoria": "Especial",
+        "potencia": 75
+      },
+      {
+        "nombre": "Energibola",
+        "tipo": "Planta",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Rayo Hielo",
+        "tipo": "Hielo",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Danza Lluvia",
+        "tipo": "Agua",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 282,
+    "sprite": "282.png",
+    "nombre": "Gardevoir",
+    "generacion": 3,
+    "tipos": [
+      "Psíquico",
+      "Hada"
+    ],
+    "estadisticas": {
+      "ps": 68,
+      "ataque": 65,
+      "defensa": 65,
+      "ataque_especial": 125,
+      "defensa_especial": 115,
+      "velocidad": 80
+    },
+    "habilidades": [
+      {
+        "nombre": "Sincronía",
+        "oculta": false
+      },
+      {
+        "nombre": "Rastro",
+        "oculta": false
+      },
+      {
+        "nombre": "Telepatía",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Psíquico",
+        "tipo": "Psíquico",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Fuerza Lunar",
+        "tipo": "Hada",
+        "categoria": "Especial",
+        "potencia": 95
+      },
+      {
+        "nombre": "Brillo Mágico",
+        "tipo": "Hada",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Bola Sombra",
+        "tipo": "Fantasma",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Onda Certera",
+        "tipo": "Lucha",
+        "categoria": "Especial",
+        "potencia": 120
+      },
+      {
+        "nombre": "Hipnosis",
+        "tipo": "Psíquico",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 417,
+    "sprite": "417.png",
+    "nombre": "Pachirisu",
+    "generacion": 4,
+    "tipos": [
+      "Eléctrico"
+    ],
+    "estadisticas": {
+      "ps": 60,
+      "ataque": 45,
+      "defensa": 70,
+      "ataque_especial": 45,
+      "defensa_especial": 90,
+      "velocidad": 95
+    },
+    "habilidades": [
+      {
+        "nombre": "Fuga",
+        "oculta": false
+      },
+      {
+        "nombre": "Recogida",
+        "oculta": false
+      },
+      {
+        "nombre": "Absorbe Electricidad",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Señuelo",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Moflete Estático",
+        "tipo": "Eléctrico",
+        "categoria": "Físico",
+        "potencia": 20
+      },
+      {
+        "nombre": "Voltiocambio",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 70
+      },
+      {
+        "nombre": "Rayo",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Onda Trueno",
+        "tipo": "Eléctrico",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 445,
+    "sprite": "445.png",
+    "nombre": "Garchomp",
+    "generacion": 4,
+    "tipos": [
+      "Dragón",
+      "Tierra"
+    ],
+    "estadisticas": {
+      "ps": 108,
+      "ataque": 130,
+      "defensa": 95,
+      "ataque_especial": 80,
+      "defensa_especial": 85,
+      "velocidad": 102
+    },
+    "habilidades": [
+      {
+        "nombre": "Velo Arena",
+        "oculta": false
+      },
+      {
+        "nombre": "Piel Tosca",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Terremoto",
+        "tipo": "Tierra",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Enfado",
+        "tipo": "Dragón",
+        "categoria": "Físico",
+        "potencia": 120
+      },
+      {
+        "nombre": "Garra Dragón",
+        "tipo": "Dragón",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Roca Afilada",
+        "tipo": "Roca",
+        "categoria": "Físico",
+        "potencia": 100
+      },
+      {
+        "nombre": "Colmillo Ígneo",
+        "tipo": "Fuego",
+        "categoria": "Físico",
+        "potencia": 65
+      },
+      {
+        "nombre": "Danza Espada",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 448,
+    "sprite": "448.png",
+    "nombre": "Lucario",
+    "generacion": 4,
+    "tipos": [
+      "Lucha",
+      "Acero"
+    ],
+    "estadisticas": {
+      "ps": 70,
+      "ataque": 110,
+      "defensa": 70,
+      "ataque_especial": 115,
+      "defensa_especial": 70,
+      "velocidad": 90
+    },
+    "habilidades": [
+      {
+        "nombre": "Impasible",
+        "oculta": false
+      },
+      {
+        "nombre": "Foco Interno",
+        "oculta": false
+      },
+      {
+        "nombre": "Justiciero",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Esfera Aural",
+        "tipo": "Lucha",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "A Bocajarro",
+        "tipo": "Lucha",
+        "categoria": "Físico",
+        "potencia": 120
+      },
+      {
+        "nombre": "Velocidad Extrema",
+        "tipo": "Normal",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Puño Bala",
+        "tipo": "Acero",
+        "categoria": "Físico",
+        "potencia": 40
+      },
+      {
+        "nombre": "Foco Resplandor",
+        "tipo": "Acero",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Pulso Dragón",
+        "tipo": "Dragón",
+        "categoria": "Especial",
+        "potencia": 85
+      },
+      {
+        "nombre": "Danza Espada",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 468,
+    "sprite": "468.png",
+    "nombre": "Togekiss",
+    "generacion": 4,
+    "tipos": [
+      "Hada",
+      "Volador"
+    ],
+    "estadisticas": {
+      "ps": 85,
+      "ataque": 50,
+      "defensa": 95,
+      "ataque_especial": 120,
+      "defensa_especial": 115,
+      "velocidad": 80
+    },
+    "habilidades": [
+      {
+        "nombre": "Entusiasmo",
+        "oculta": false
+      },
+      {
+        "nombre": "Dicha",
+        "oculta": false
+      },
+      {
+        "nombre": "Afortunado",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Señuelo",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Tajo Aéreo",
+        "tipo": "Volador",
+        "categoria": "Especial",
+        "potencia": 75
+      },
+      {
+        "nombre": "Brillo Mágico",
+        "tipo": "Hada",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Lanzallamas",
+        "tipo": "Fuego",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Deseo",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Onda Trueno",
+        "tipo": "Eléctrico",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Respiro",
+        "tipo": "Volador",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 479,
+    "sprite": "479.png",
+    "nombre": "Rotom",
+    "generacion": 4,
+    "tipos": [
+      "Eléctrico",
+      "Fantasma"
+    ],
+    "estadisticas": {
+      "ps": 50,
+      "ataque": 50,
+      "defensa": 77,
+      "ataque_especial": 95,
+      "defensa_especial": 77,
+      "velocidad": 91
+    },
+    "habilidades": [
+      {
+        "nombre": "Levitación",
+        "oculta": false
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Rayo",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Voltiocambio",
+        "tipo": "Eléctrico",
+        "categoria": "Especial",
+        "potencia": 70
+      },
+      {
+        "nombre": "Bola Sombra",
+        "tipo": "Fantasma",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Onda Trueno",
+        "tipo": "Eléctrico",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Fuego Fatuo",
+        "tipo": "Fuego",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 591,
+    "sprite": "591.png",
+    "nombre": "Amoonguss",
+    "generacion": 5,
+    "tipos": [
+      "Planta",
+      "Veneno"
+    ],
+    "estadisticas": {
+      "ps": 114,
+      "ataque": 85,
+      "defensa": 70,
+      "ataque_especial": 85,
+      "defensa_especial": 80,
+      "velocidad": 30
+    },
+    "habilidades": [
+      {
+        "nombre": "Efecto Espora",
+        "oculta": false
+      },
+      {
+        "nombre": "Regeneración",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Polvo Ira",
+        "tipo": "Bicho",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Espora",
+        "tipo": "Planta",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Gigadrenado",
+        "tipo": "Planta",
+        "categoria": "Especial",
+        "potencia": 75
+      },
+      {
+        "nombre": "Bomba Lodo",
+        "tipo": "Veneno",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  },
+  {
+    "numero": 658,
+    "sprite": "658.png",
+    "nombre": "Greninja",
+    "generacion": 6,
+    "tipos": [
+      "Agua",
+      "Siniestro"
+    ],
+    "estadisticas": {
+      "ps": 72,
+      "ataque": 95,
+      "defensa": 67,
+      "ataque_especial": 103,
+      "defensa_especial": 71,
+      "velocidad": 122
+    },
+    "habilidades": [
+      {
+        "nombre": "Torrente",
+        "oculta": false
+      },
+      {
+        "nombre": "Mutatipo",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Surf",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Hidrobomba",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 110
+      },
+      {
+        "nombre": "Shuriken de Agua",
+        "tipo": "Agua",
+        "categoria": "Especial",
+        "potencia": 15
+      },
+      {
+        "nombre": "Pulso Umbrío",
+        "tipo": "Siniestro",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Rayo Hielo",
+        "tipo": "Hielo",
+        "categoria": "Especial",
+        "potencia": 90
+      },
+      {
+        "nombre": "Ida y Vuelta",
+        "tipo": "Bicho",
+        "categoria": "Físico",
+        "potencia": 70
+      }
+    ]
+  },
+  {
+    "numero": 700,
+    "sprite": "700.png",
+    "nombre": "Sylveon",
+    "generacion": 6,
+    "tipos": [
+      "Hada"
+    ],
+    "estadisticas": {
+      "ps": 95,
+      "ataque": 65,
+      "defensa": 65,
+      "ataque_especial": 110,
+      "defensa_especial": 130,
+      "velocidad": 60
+    },
+    "habilidades": [
+      {
+        "nombre": "Gran Encanto",
+        "oculta": false
+      },
+      {
+        "nombre": "Piel Feérica",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Fuerza Lunar",
+        "tipo": "Hada",
+        "categoria": "Especial",
+        "potencia": 95
+      },
+      {
+        "nombre": "Brillo Mágico",
+        "tipo": "Hada",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Bola Sombra",
+        "tipo": "Fantasma",
+        "categoria": "Especial",
+        "potencia": 80
+      },
+      {
+        "nombre": "Hiperrayo",
+        "tipo": "Normal",
+        "categoria": "Especial",
+        "potencia": 150
+      },
+      {
+        "nombre": "Deseo",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ],
+    "evoluciona_de": "Eevee"
+  },
+  {
+    "numero": 823,
+    "sprite": "823.png",
+    "nombre": "Corviknight",
+    "generacion": 8,
+    "tipos": [
+      "Volador",
+      "Acero"
+    ],
+    "estadisticas": {
+      "ps": 98,
+      "ataque": 87,
+      "defensa": 105,
+      "ataque_especial": 53,
+      "defensa_especial": 85,
+      "velocidad": 67
+    },
+    "habilidades": [
+      {
+        "nombre": "Presión",
+        "oculta": false
+      },
+      {
+        "nombre": "Nerviosismo",
+        "oculta": false
+      },
+      {
+        "nombre": "Coraza Reflejo",
+        "oculta": true
+      }
+    ],
+    "movimientos": [
+      {
+        "nombre": "Pájaro Osado",
+        "tipo": "Volador",
+        "categoria": "Físico",
+        "potencia": 120
+      },
+      {
+        "nombre": "Cabeza de Hierro",
+        "tipo": "Acero",
+        "categoria": "Físico",
+        "potencia": 80
+      },
+      {
+        "nombre": "Corpulencia",
+        "tipo": "Lucha",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Respiro",
+        "tipo": "Volador",
+        "categoria": "Estado"
+      },
+      {
+        "nombre": "Protección",
+        "tipo": "Normal",
+        "categoria": "Estado"
+      }
+    ]
+  }
+]
