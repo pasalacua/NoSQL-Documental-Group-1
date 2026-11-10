@@ -480,3 +480,37 @@ button,
 .trainer-sprite {
     font-size: 32px;
 }
+
+
+/* Personajes del laboratorio */
+.oak-character,
+.player-character {
+    position: absolute;
+    bottom: 18%;
+    z-index: 2;
+}
+
+.oak-character {
+    left: 15%;
+}
+
+.player-character {
+    right: 15%;
+}
+
+/* Tamaño y calidad de los sprites */
+.oak-character img {
+    width: 72px;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.player-character img {
+    width: 64px;
+    height: auto;
+    image-rendering: pixelated;
+}
+
+.player-character {
+    visibility: hidden;
+}
