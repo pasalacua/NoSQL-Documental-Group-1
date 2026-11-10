@@ -1,7 +1,6 @@
 [
   {
     "numero": 1,
-    "sprite": "1.png",
     "nombre": "Bulbasaur",
     "generacion": 1,
     "tipos": [
@@ -60,7 +59,6 @@
   },
   {
     "numero": 3,
-    "sprite": "3.png",
     "nombre": "Venusaur",
     "generacion": 1,
     "tipos": [
@@ -125,7 +123,6 @@
   },
   {
     "numero": 4,
-    "sprite": "4.png",
     "nombre": "Charmander",
     "generacion": 1,
     "tipos": [
@@ -178,7 +175,6 @@
   },
   {
     "numero": 6,
-    "sprite": "6.png",
     "nombre": "Charizard",
     "generacion": 1,
     "tipos": [
@@ -274,7 +270,6 @@
   },
   {
     "numero": 7,
-    "sprite": "7.png",
     "nombre": "Squirtle",
     "generacion": 1,
     "tipos": [
@@ -327,7 +322,6 @@
   },
   {
     "numero": 9,
-    "sprite": "9.png",
     "nombre": "Blastoise",
     "generacion": 1,
     "tipos": [
@@ -391,7 +385,6 @@
   },
   {
     "numero": 25,
-    "sprite": "25.png",
     "nombre": "Pikachu",
     "generacion": 1,
     "tipos": [
@@ -459,7 +452,6 @@
   },
   {
     "numero": 26,
-    "sprite": "26.png",
     "nombre": "Raichu",
     "generacion": 1,
     "tipos": [
@@ -523,7 +515,6 @@
   },
   {
     "numero": 35,
-    "sprite": "35.png",
     "nombre": "Clefairy",
     "generacion": 1,
     "tipos": [
@@ -577,7 +568,6 @@
   },
   {
     "numero": 36,
-    "sprite": "36.png",
     "nombre": "Clefable",
     "generacion": 1,
     "tipos": [
@@ -643,7 +633,6 @@
   },
   {
     "numero": 37,
-    "sprite": "37.png",
     "nombre": "Vulpix",
     "generacion": 1,
     "tipos": [
@@ -695,7 +684,6 @@
   },
   {
     "numero": 54,
-    "sprite": "54.png",
     "nombre": "Psyduck",
     "generacion": 1,
     "tipos": [
@@ -757,7 +745,6 @@
   },
   {
     "numero": 55,
-    "sprite": "55.png",
     "nombre": "Golduck",
     "generacion": 1,
     "tipos": [
@@ -824,7 +811,6 @@
   },
   {
     "numero": 58,
-    "sprite": "58.png",
     "nombre": "Growlithe",
     "generacion": 1,
     "tipos": [
@@ -887,7 +873,6 @@
   },
   {
     "numero": 59,
-    "sprite": "59.png",
     "nombre": "Arcanine",
     "generacion": 1,
     "tipos": [
@@ -955,7 +940,6 @@
   },
   {
     "numero": 62,
-    "sprite": "62.png",
     "nombre": "Poliwrath",
     "generacion": 1,
     "tipos": [
@@ -1023,7 +1007,6 @@
   },
   {
     "numero": 65,
-    "sprite": "65.png",
     "nombre": "Alakazam",
     "generacion": 1,
     "tipos": [
@@ -1091,7 +1074,6 @@
   },
   {
     "numero": 68,
-    "sprite": "68.png",
     "nombre": "Machamp",
     "generacion": 1,
     "tipos": [
@@ -1159,7 +1141,6 @@
   },
   {
     "numero": 77,
-    "sprite": "77.png",
     "nombre": "Ponyta",
     "generacion": 1,
     "tipos": [
@@ -1216,7 +1197,6 @@
   },
   {
     "numero": 94,
-    "sprite": "94.png",
     "nombre": "Gengar",
     "generacion": 1,
     "tipos": [
@@ -1276,7 +1256,6 @@
   },
   {
     "numero": 129,
-    "sprite": "129.png",
     "nombre": "Magikarp",
     "generacion": 1,
     "tipos": [
@@ -1316,7 +1295,6 @@
   },
   {
     "numero": 130,
-    "sprite": "130.png",
     "nombre": "Gyarados",
     "generacion": 1,
     "tipos": [
@@ -1381,7 +1359,6 @@
   },
   {
     "numero": 131,
-    "sprite": "131.png",
     "nombre": "Lapras",
     "generacion": 1,
     "tipos": [
@@ -1445,7 +1422,6 @@
   },
   {
     "numero": 132,
-    "sprite": "132.png",
     "nombre": "Ditto",
     "generacion": 1,
     "tipos": [
@@ -1480,7 +1456,6 @@
   },
   {
     "numero": 133,
-    "sprite": "133.png",
     "nombre": "Eevee",
     "generacion": 1,
     "tipos": [
@@ -1557,7 +1532,6 @@
   },
   {
     "numero": 141,
-    "sprite": "141.png",
     "nombre": "Kabutops",
     "generacion": 1,
     "tipos": [
@@ -1627,7 +1601,6 @@
   },
   {
     "numero": 143,
-    "sprite": "143.png",
     "nombre": "Snorlax",
     "generacion": 1,
     "tipos": [
@@ -1695,7 +1668,6 @@
   },
   {
     "numero": 149,
-    "sprite": "149.png",
     "nombre": "Dragonite",
     "generacion": 1,
     "tipos": [
@@ -1765,7 +1737,6 @@
   },
   {
     "numero": 150,
-    "sprite": "150.png",
     "nombre": "Mewtwo",
     "generacion": 1,
     "tipos": [
@@ -1850,7 +1821,6 @@
   },
   {
     "numero": 212,
-    "sprite": "212.png",
     "nombre": "Scizor",
     "generacion": 2,
     "tipos": [
@@ -1918,7 +1888,6 @@
   },
   {
     "numero": 230,
-    "sprite": "230.png",
     "nombre": "Kingdra",
     "generacion": 2,
     "tipos": [
@@ -1992,7 +1961,6 @@
   },
   {
     "numero": 248,
-    "sprite": "248.png",
     "nombre": "Tyranitar",
     "generacion": 2,
     "tipos": [
@@ -2057,7 +2025,6 @@
   },
   {
     "numero": 272,
-    "sprite": "272.png",
     "nombre": "Ludicolo",
     "generacion": 3,
     "tipos": [
@@ -2131,7 +2098,6 @@
   },
   {
     "numero": 282,
-    "sprite": "282.png",
     "nombre": "Gardevoir",
     "generacion": 3,
     "tipos": [
@@ -2205,7 +2171,6 @@
   },
   {
     "numero": 417,
-    "sprite": "417.png",
     "nombre": "Pachirisu",
     "generacion": 4,
     "tipos": [
@@ -2271,7 +2236,6 @@
   },
   {
     "numero": 445,
-    "sprite": "445.png",
     "nombre": "Garchomp",
     "generacion": 4,
     "tipos": [
@@ -2341,7 +2305,6 @@
   },
   {
     "numero": 448,
-    "sprite": "448.png",
     "nombre": "Lucario",
     "generacion": 4,
     "tipos": [
@@ -2416,7 +2379,6 @@
   },
   {
     "numero": 468,
-    "sprite": "468.png",
     "nombre": "Togekiss",
     "generacion": 4,
     "tipos": [
@@ -2493,7 +2455,6 @@
   },
   {
     "numero": 479,
-    "sprite": "479.png",
     "nombre": "Rotom",
     "generacion": 4,
     "tipos": [
@@ -2552,7 +2513,6 @@
   },
   {
     "numero": 591,
-    "sprite": "591.png",
     "nombre": "Amoonguss",
     "generacion": 5,
     "tipos": [
@@ -2609,7 +2569,6 @@
   },
   {
     "numero": 658,
-    "sprite": "658.png",
     "nombre": "Greninja",
     "generacion": 6,
     "tipos": [
@@ -2675,7 +2634,6 @@
   },
   {
     "numero": 700,
-    "sprite": "700.png",
     "nombre": "Sylveon",
     "generacion": 6,
     "tipos": [
@@ -2739,7 +2697,6 @@
   },
   {
     "numero": 823,
-    "sprite": "823.png",
     "nombre": "Corviknight",
     "generacion": 8,
     "tipos": [
