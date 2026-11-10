@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+
+{% block title %}POKÉLAB - Panel del expositor{% endblock %}
+
+{% block content %}
+<main class="panel-page">
+
+    <header class="panel-header">
+        <h1>POKÉLAB · PANEL DEL EXPOSITOR</h1>
+        <p>Resultados en vivo calculados con pipelines de agregación sobre MongoDB.</p>
+    </header>
+
+    {% if not autorizado %}
+    <form id="form-pin" class="panel-card panel-pin">
+        <label for="pin">PIN del panel</label>
+        <input id="pin" type="password" inputmode="numeric" autocomplete="off" required>
+        <button type="submit" class="btn">INGRESAR</button>
+        <p id="pin-error" class="modal-error"></p>
+    </form>
+    {% else %}
+
+    <section class="panel-grid">
+        <article class="panel-card panel-unirse">
+            <p class="etiqueta">EL PÚBLICO ENTRA DESDE EL CELULAR A</p>
+            <p id="panel-url" class="panel-url"></p>
+            <p class="panel-numero"><span id="panel-investigadores">0</span> investigadores conectados</p>
+        </article>
+
+        <article class="panel-card panel-trampa">
+            <p class="etiqueta">CAYERON EN LA TRAMPA DE $elemMatch</p>
+            <p class="panel-numero grande" id="panel-trampa">0</p>
+            <p class="ayuda">Entregas de la Entrenadora Azul donde las condiciones se cumplieron en elementos distintos del array.</p>
+        </article>
+    </section>
+
+    <section class="panel-card">
+        <p class="etiqueta">MISIONES</p>
+        <div class="tabla-scroll">
+            <table class="tabla">
+                <thead><tr><th>Entrenador</th><th>Concepto</th><th>Completadas</th><th>Entregas OK</th><th>Entregas con error</th></tr></thead>
+                <tbody id="panel-misiones"></tbody>
+            </table>
+        </div>
+        <p class="etiqueta">ERRORES MÁS FRECUENTES</p>
+        <p id="panel-errores" class="panel-errores"></p>
+    </section>
+
+    <section class="panel-grid">
+        <article class="panel-card">
+            <p class="etiqueta">FORMAS REGISTRADAS POR EL PÚBLICO (DOCUMENTOS EMBEBIDOS)</p>
+            <div id="panel-formas" class="panel-formas"></div>
+        </article>
+        <article class="panel-card">
+            <p class="etiqueta">NOMBRES DE CAMPO QUE ELIGIÓ EL PÚBLICO (ESQUEMA FLEXIBLE)</p>
+            <ul id="panel-campos" class="panel-campos"></ul>
+            <p class="ayuda">Mismo dato, distintos nombres: la flexibilidad tiene un costo si no hay convenciones o $jsonSchema.</p>
+        </article>
+    </section>
+
+    <section class="panel-grid">
+        <article class="panel-card">
+            <p class="etiqueta">BITÁCORA EN VIVO (COLECCIÓN CAPPED)</p>
+            <ul id="panel-bitacora" class="panel-bitacora"></ul>
+        </article>
+        <article class="panel-card">
+            <p class="etiqueta">RANKING</p>
+            <ol id="panel-ranking" class="ranking-list"></ol>
+        </article>
+    </section>
+
+    <section class="panel-card">
+        <p class="etiqueta">ADMINISTRAR DOCUMENTOS (updateOne)</p>
+        <form id="form-editar" class="panel-editar">
+            <label>Pokémon <select name="numero" id="editar-pokemon"></select></label>
+            <label>Operación
+                <select name="operacion">
+                    <option value="$set">$set · cambiar o crear un campo</option>
+                    <option value="$inc">$inc · sumar a un número</option>
+                    <option value="$unset">$unset · borrar un campo</option>
+                    <option value="$push">$push · agregar a un array</option>
+                    <option value="$addToSet">$addToSet · agregar sin repetir</option>
+                    <option value="$pull">$pull · sacar de un array</option>
+                </select>
+            </label>
+            <label>Campo <input name="campo" placeholder="estadisticas.velocidad" autocomplete="off"></label>
+            <label>Valor <input name="valor" placeholder='10  ó  "texto"  ó  { "nombre": "Surf", "tipo": "Agua", "categoria": "Especial" }' autocomplete="off"></label>
+            <button type="submit" class="btn">EJECUTAR</button>
+        </form>
+        <pre id="editar-resultado" class="codigo hidden"></pre>
+        <p class="ayuda">Probá romper el esquema (por ejemplo $set de "tipos" con un número): el validador $jsonSchema lo rechaza.</p>
+    </section>
+
+    <section class="panel-card panel-peligro">
+        <p class="etiqueta">REINICIAR LA BASE</p>
+        <button type="button" id="reiniciar-pokedex" class="btn-sec">RECARGAR POKÉDEX (CONSERVA JUGADORES)</button>
+        <button type="button" id="reiniciar-todo" class="btn-sec peligro">BORRAR TODO Y EMPEZAR DE CERO</button>
+        <p id="reiniciar-resultado" class="ayuda"></p>
+    </section>
+
+    {% endif %}
+</main>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/panel.js') }}"></script>
+{% endblock %}

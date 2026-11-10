@@ -9,6 +9,14 @@
 
     <section class="laboratory">
 
+        <!-- Datos del investigador (documento de la colección investigadores) -->
+        <div class="hud" id="hud">
+            <span class="hud-name" id="hud-name">{{ investigador.nombre }}</span>
+            <span class="hud-points"><span id="hud-points">{{ investigador.puntos }}</span> PTS</span>
+            <button id="ranking-button" class="hud-button" type="button">RANKING</button>
+            <button id="logout-button" class="hud-button" type="button">SALIR</button>
+        </div>
+
         <!-- Acceso al cuaderno -->
         <button id="notebook-button" class="notebook-button">
             <img
@@ -33,31 +41,12 @@
             >
         </div>
 
-        <!-- Entrenadores que visitan el laboratorio -->
+        <!-- Entrenadores que visitan el laboratorio (se cargan desde la colección misiones) -->
         <div id="trainer-list" class="trainer-list hidden">
 
             <h2>ENTRENADORES</h2>
 
-            <button class="trainer-option"
-                    data-trainer="Entrenador Rojo"
-                    data-request="Necesito encontrar un Pokémon que conozca el movimiento Follow Me y tenga más de 60 puntos de velocidad">
-                <span class="trainer-sprite">🧢</span>
-                <span>ENTRENADOR ROJO</span>
-            </button>
-
-            <button class="trainer-option"
-                    data-trainer="Entrenadora Azul"
-                    data-request="Estoy buscando un Pokémon de tipo Agua con una habilidad determinada">
-                <span class="trainer-sprite">👩</span>
-                <span>ENTRENADORA AZUL</span>
-            </button>
-
-            <button class="trainer-option"
-                    data-trainer="Entrenador Verde"
-                    data-request="Quiero investigar las formas alternativas de algunos Pokémon">
-                <span class="trainer-sprite">🧑</span>
-                <span>ENTRENADOR VERDE</span>
-            </button>
+            <div id="trainer-options" class="trainer-options"></div>
 
         </div>
 
@@ -67,9 +56,12 @@
                 ¡Bienvenido al laboratorio Pokémon!
             </p>
 
-            <button id="next-dialogue" class="dialogue-next">
-                SIGUIENTE ▼
-            </button>
+            <div class="dialogue-footer">
+                <div id="dialogue-actions" class="dialogue-actions"></div>
+                <button id="next-dialogue" class="dialogue-next">
+                    SIGUIENTE ▼
+                </button>
+            </div>
         </div>
 
         <!-- Cuaderno de investigación -->
@@ -111,9 +103,74 @@
     </section>
 </div>
 
+<!-- Terminal de la Pokédex: acá el investigador opera directamente sobre MongoDB -->
+<div id="terminal" class="terminal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="terminal-trainer">
+    <div class="terminal">
+        <header class="terminal-header">
+            <div class="terminal-trainer">
+                <span id="terminal-sprite" class="terminal-sprite"></span>
+                <div>
+                    <p class="terminal-label">SOLICITUD DE</p>
+                    <h2 id="terminal-trainer"></h2>
+                </div>
+            </div>
+            <div class="terminal-tools">
+                <button id="terminal-hint" type="button" class="btn-sec">PISTA</button>
+                <button id="terminal-notebook" type="button" class="btn-sec">CUADERNO</button>
+                <button id="terminal-close" type="button" class="btn-close" aria-label="Cerrar">X</button>
+            </div>
+        </header>
+
+        <p id="terminal-request" class="terminal-request"></p>
+        <p class="terminal-concept">CONCEPTO · <span id="terminal-concept"></span></p>
+        <p id="terminal-hint-text" class="terminal-hint hidden"></p>
+
+        <div id="terminal-body" class="terminal-body"></div>
+
+        <div id="terminal-feedback" class="terminal-feedback hidden" aria-live="polite"></div>
+    </div>
+</div>
+
+<!-- Visor de documentos BSON -->
+<div id="doc-viewer" class="doc-overlay hidden" role="dialog" aria-modal="true">
+    <div class="doc-box">
+        <div class="doc-header">
+            <h2 id="doc-title">DOCUMENTO</h2>
+            <button id="doc-close" type="button" class="btn-close" aria-label="Cerrar">X</button>
+        </div>
+        <div class="doc-columns">
+            <div>
+                <p class="etiqueta">MONGODB · UN SOLO DOCUMENTO</p>
+                <pre id="doc-json" class="codigo json"></pre>
+            </div>
+            <div>
+                <p class="etiqueta">MODELO RELACIONAL · LO MISMO EN TABLAS</p>
+                <div id="doc-sql" class="doc-sql"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ranking (pipeline de agregación sobre investigadores) -->
+<div id="ranking-panel" class="doc-overlay hidden" role="dialog" aria-modal="true">
+    <div class="doc-box ranking-box">
+        <div class="doc-header">
+            <h2>RANKING</h2>
+            <button id="ranking-close" type="button" class="btn-close" aria-label="Cerrar">X</button>
+        </div>
+        <ol id="ranking-list" class="ranking-list"></ol>
+        <p class="ayuda">Calculado con db.investigadores.aggregate([ $project, $sort, $limit ])</p>
+    </div>
+</div>
+
 {% endblock %}
 
 {% block scripts %}
+<script>
+    window.POKELAB = {{ {"nombre": investigador.nombre, "nueva": nueva} | tojson }};
+</script>
 <script src="{{ url_for('static', filename='js/dialogue.js') }}"></script>
 <script src="{{ url_for('static', filename='js/notebook.js') }}"></script>
+<script src="{{ url_for('static', filename='js/terminal.js') }}"></script>
+<script src="{{ url_for('static', filename='js/game.js') }}"></script>
 {% endblock %}

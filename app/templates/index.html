@@ -18,16 +18,17 @@
 
         <div class="title-menu">
 
-            <a href="{{ url_for('main.partida') }}"
-               class="menu-option">
+            <button id="nueva-partida" class="menu-option" type="button">
                 NUEVA PARTIDA
-            </a>
+            </button>
 
-            <button class="menu-option disabled-option" disabled>
+            <button id="cargar-partida" class="menu-option" type="button">
                 CARGAR PARTIDA
             </button>
 
         </div>
+
+        <p id="estado-conexion" class="title-status"></p>
 
         <p class="title-footer">
             Una aventura de investigación comienza...
@@ -37,4 +38,23 @@
 
 </div>
 
+<!-- Registro del investigador: cada partida es un documento en la colección investigadores -->
+<div id="modal-partida" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-titulo">
+    <form id="form-partida" class="modal-box">
+        <h2 id="modal-titulo">NUEVA PARTIDA</h2>
+        <label for="nombre-investigador">¿Cómo te llamás, investigador?</label>
+        <input id="nombre-investigador" name="nombre" maxlength="20" autocomplete="off" required
+               placeholder="Tu nombre">
+        <p id="modal-error" class="modal-error"></p>
+        <div class="modal-actions">
+            <button type="button" id="modal-cancelar" class="btn-sec">VOLVER</button>
+            <button type="submit" class="btn">COMENZAR</button>
+        </div>
+    </form>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/title.js') }}"></script>
 {% endblock %}

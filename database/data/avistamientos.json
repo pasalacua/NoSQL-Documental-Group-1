@@ -1,0 +1,200 @@
+[
+  {
+    "clave": "mega-tyranitar",
+    "numero": 248,
+    "pokemon": "Tyranitar",
+    "forma": "Mega Tyranitar",
+    "tipos": ["Roca", "Siniestro"],
+    "estadisticas": {"ps": 100, "ataque": 164, "defensa": 150, "ataque_especial": 95, "defensa_especial": 120, "velocidad": 71},
+    "habilidad": "Chorro Arena",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Tyranitarita"},
+    "relato": "En medio de una tormenta de arena, un Tyranitar que llevaba una Tyranitarita megaevolucionó. Su cuerpo se cubrió de púas y se volvió mucho más resistente."
+  },
+  {
+    "clave": "vulpix-alola",
+    "numero": 37,
+    "pokemon": "Vulpix",
+    "forma": "Vulpix de Alola",
+    "tipos": ["Hielo"],
+    "estadisticas": {"ps": 38, "ataque": 41, "defensa": 40, "ataque_especial": 50, "defensa_especial": 65, "velocidad": 65},
+    "habilidad": "Manto Níveo",
+    "dato_especial": {"descripcion": "Región donde vive esta variante", "valor": "Alola"},
+    "relato": "En las montañas nevadas de Alola encontramos un Vulpix blanco que exhala aire helado en vez de fuego. Sus estadísticas son iguales a las del Vulpix común."
+  },
+  {
+    "clave": "raichu-alola",
+    "numero": 26,
+    "pokemon": "Raichu",
+    "forma": "Raichu de Alola",
+    "tipos": ["Eléctrico", "Psíquico"],
+    "estadisticas": {"ps": 60, "ataque": 85, "defensa": 50, "ataque_especial": 95, "defensa_especial": 85, "velocidad": 110},
+    "habilidad": "Surcaolas",
+    "dato_especial": {"descripcion": "Región donde vive esta variante", "valor": "Alola"},
+    "relato": "En las playas de Alola vimos un Raichu que flota sobre su cola usando poderes psíquicos. Es de tipo Eléctrico y Psíquico."
+  },
+  {
+    "clave": "ponyta-galar",
+    "numero": 77,
+    "pokemon": "Ponyta",
+    "forma": "Ponyta de Galar",
+    "tipos": ["Psíquico"],
+    "estadisticas": {"ps": 50, "ataque": 85, "defensa": 55, "ataque_especial": 65, "defensa_especial": 65, "velocidad": 90},
+    "habilidad": "Velo Pastel",
+    "dato_especial": {"descripcion": "Región donde vive esta variante", "valor": "Galar"},
+    "relato": "En un bosque brumoso de Galar apareció un Ponyta con crin de colores pastel. Ya no es de tipo Fuego: es de tipo Psíquico."
+  },
+  {
+    "clave": "growlithe-hisui",
+    "numero": 58,
+    "pokemon": "Growlithe",
+    "forma": "Growlithe de Hisui",
+    "tipos": ["Fuego", "Roca"],
+    "estadisticas": {"ps": 60, "ataque": 75, "defensa": 45, "ataque_especial": 65, "defensa_especial": 50, "velocidad": 55},
+    "habilidad": "Intimidación",
+    "dato_especial": {"descripcion": "Región antigua donde se registró", "valor": "Hisui"},
+    "relato": "Unos registros antiguos de la región de Hisui describen un Growlithe con un mechón de roca en la cabeza. Es de tipo Fuego y Roca."
+  },
+  {
+    "clave": "mega-gengar",
+    "numero": 94,
+    "pokemon": "Gengar",
+    "forma": "Mega Gengar",
+    "tipos": ["Fantasma", "Veneno"],
+    "estadisticas": {"ps": 60, "ataque": 65, "defensa": 80, "ataque_especial": 170, "defensa_especial": 95, "velocidad": 130},
+    "habilidad": "Sombra Trampa",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Gengarita"},
+    "relato": "De noche, un Gengar con una Gengarita megaevolucionó y quedó medio hundido en el suelo. Su ataque especial se disparó."
+  },
+  {
+    "clave": "mega-gyarados",
+    "numero": 130,
+    "pokemon": "Gyarados",
+    "forma": "Mega Gyarados",
+    "tipos": ["Agua", "Siniestro"],
+    "estadisticas": {"ps": 95, "ataque": 155, "defensa": 109, "ataque_especial": 70, "defensa_especial": 130, "velocidad": 81},
+    "habilidad": "Rompemoldes",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Gyaradosita"},
+    "relato": "Un Gyarados furioso con una Gyaradosita megaevolucionó en el lago. Dejó de ser Volador y pasó a ser de tipo Agua y Siniestro."
+  },
+  {
+    "clave": "mega-lucario",
+    "numero": 448,
+    "pokemon": "Lucario",
+    "forma": "Mega Lucario",
+    "tipos": ["Lucha", "Acero"],
+    "estadisticas": {"ps": 70, "ataque": 145, "defensa": 88, "ataque_especial": 140, "defensa_especial": 70, "velocidad": 112},
+    "habilidad": "Adaptable",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Lucarita"},
+    "relato": "Durante un entrenamiento, un Lucario que llevaba una Lucarita megaevolucionó. Le aparecieron marcas negras y su aura se volvió más intensa."
+  },
+  {
+    "clave": "mega-garchomp",
+    "numero": 445,
+    "pokemon": "Garchomp",
+    "forma": "Mega Garchomp",
+    "tipos": ["Dragón", "Tierra"],
+    "estadisticas": {"ps": 108, "ataque": 170, "defensa": 115, "ataque_especial": 120, "defensa_especial": 95, "velocidad": 92},
+    "habilidad": "Poder Arena",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Garchompita"},
+    "relato": "En el desierto, un Garchomp con una Garchompita megaevolucionó. Sus aletas se transformaron en guadañas y se volvió un poco más lento."
+  },
+  {
+    "clave": "mega-gardevoir",
+    "numero": 282,
+    "pokemon": "Gardevoir",
+    "forma": "Mega Gardevoir",
+    "tipos": ["Psíquico", "Hada"],
+    "estadisticas": {"ps": 68, "ataque": 85, "defensa": 65, "ataque_especial": 165, "defensa_especial": 135, "velocidad": 100},
+    "habilidad": "Piel Feérica",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Gardevoirita"},
+    "relato": "Para proteger a su entrenador, una Gardevoir con una Gardevoirita megaevolucionó. Su vestido se abrió como un vestido de gala."
+  },
+  {
+    "clave": "mega-blastoise",
+    "numero": 9,
+    "pokemon": "Blastoise",
+    "forma": "Mega Blastoise",
+    "tipos": ["Agua"],
+    "estadisticas": {"ps": 79, "ataque": 103, "defensa": 120, "ataque_especial": 135, "defensa_especial": 115, "velocidad": 78},
+    "habilidad": "Megadisparador",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Blastoisita"},
+    "relato": "Un Blastoise con una Blastoisita megaevolucionó y le apareció un cañón gigante en el caparazón."
+  },
+  {
+    "clave": "mega-venusaur",
+    "numero": 3,
+    "pokemon": "Venusaur",
+    "forma": "Mega Venusaur",
+    "tipos": ["Planta", "Veneno"],
+    "estadisticas": {"ps": 80, "ataque": 100, "defensa": 123, "ataque_especial": 122, "defensa_especial": 120, "velocidad": 80},
+    "habilidad": "Sebo",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Venusaurita"},
+    "relato": "En el invernadero, un Venusaur con una Venusaurita megaevolucionó: su flor creció muchísimo y su defensa aumentó."
+  },
+  {
+    "clave": "mega-charizard-y",
+    "numero": 6,
+    "pokemon": "Charizard",
+    "forma": "Mega Charizard Y",
+    "tipos": ["Fuego", "Volador"],
+    "estadisticas": {"ps": 78, "ataque": 104, "defensa": 78, "ataque_especial": 159, "defensa_especial": 115, "velocidad": 100},
+    "habilidad": "Sequía",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Charizardita Y"},
+    "relato": "No es la Mega Charizard X que ya está registrada: este Charizard llevaba una Charizardita Y, sigue siendo de tipo Fuego y Volador y hace que el sol brille con fuerza."
+  },
+  {
+    "clave": "mega-alakazam",
+    "numero": 65,
+    "pokemon": "Alakazam",
+    "forma": "Mega Alakazam",
+    "tipos": ["Psíquico"],
+    "estadisticas": {"ps": 55, "ataque": 50, "defensa": 65, "ataque_especial": 175, "defensa_especial": 105, "velocidad": 150},
+    "habilidad": "Rastro",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Alakazamita"},
+    "relato": "Un Alakazam con una Alakazamita megaevolucionó y ahora levita rodeado de cucharas. Su velocidad llegó a 150."
+  },
+  {
+    "clave": "mega-scizor",
+    "numero": 212,
+    "pokemon": "Scizor",
+    "forma": "Mega Scizor",
+    "tipos": ["Bicho", "Acero"],
+    "estadisticas": {"ps": 70, "ataque": 150, "defensa": 140, "ataque_especial": 65, "defensa_especial": 100, "velocidad": 75},
+    "habilidad": "Experto",
+    "dato_especial": {"descripcion": "Piedra que necesita para megaevolucionar", "valor": "Scizorita"},
+    "relato": "Un Scizor con una Scizorita megaevolucionó: sus pinzas se agrandaron y su cuerpo se volvió casi indestructible."
+  },
+  {
+    "clave": "rotom-lavado",
+    "numero": 479,
+    "pokemon": "Rotom",
+    "forma": "Rotom Lavado",
+    "tipos": ["Eléctrico", "Agua"],
+    "estadisticas": {"ps": 50, "ataque": 65, "defensa": 107, "ataque_especial": 105, "defensa_especial": 107, "velocidad": 86},
+    "habilidad": "Levitación",
+    "dato_especial": {"descripcion": "Electrodoméstico que poseyó", "valor": "Lavarropas"},
+    "relato": "En el sótano del laboratorio, un Rotom se metió dentro del lavarropas y cambió de forma. Ahora es de tipo Eléctrico y Agua."
+  },
+  {
+    "clave": "rotom-calor",
+    "numero": 479,
+    "pokemon": "Rotom",
+    "forma": "Rotom Calor",
+    "tipos": ["Eléctrico", "Fuego"],
+    "estadisticas": {"ps": 50, "ataque": 65, "defensa": 107, "ataque_especial": 105, "defensa_especial": 107, "velocidad": 86},
+    "habilidad": "Levitación",
+    "dato_especial": {"descripcion": "Electrodoméstico que poseyó", "valor": "Horno"},
+    "relato": "En la cocina del laboratorio, un Rotom se metió dentro del horno y cambió de forma. Ahora es de tipo Eléctrico y Fuego."
+  },
+  {
+    "clave": "rotom-corte",
+    "numero": 479,
+    "pokemon": "Rotom",
+    "forma": "Rotom Corte",
+    "tipos": ["Eléctrico", "Planta"],
+    "estadisticas": {"ps": 50, "ataque": 65, "defensa": 107, "ataque_especial": 105, "defensa_especial": 107, "velocidad": 86},
+    "habilidad": "Levitación",
+    "dato_especial": {"descripcion": "Electrodoméstico que poseyó", "valor": "Cortadora de césped"},
+    "relato": "En el jardín del laboratorio, un Rotom se metió dentro de la cortadora de césped y cambió de forma. Ahora es de tipo Eléctrico y Planta."
+  }
+]

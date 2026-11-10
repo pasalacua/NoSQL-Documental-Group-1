@@ -13,6 +13,10 @@
     <link rel="stylesheet"
           href="{{ url_for('static', filename='css/game.css') }}">
 
+    <!-- Estilos de la terminal de MongoDB, modales y panel -->
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/terminal.css') }}">
+
     <!-- Tipografías pixeladas -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,6 +27,7 @@
 <body>
     {% block content %}{% endblock %}
 
+    <script src="{{ url_for('static', filename='js/api.js') }}"></script>
     {% block scripts %}{% endblock %}
 </body>
 </html>
