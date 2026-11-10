@@ -1,126 +1,40 @@
-
 {% extends "base.html" %}
 
-{% block title %}Inicio | POKÉLAB{% endblock %}
+{% block title %}POKÉLAB - Inicio{% endblock %}
 
 {% block content %}
 
-<!-- Presentación principal del laboratorio -->
-<section class="mb-12 rounded-2xl border border-slate-800 bg-slate-900 p-8 md:p-12">
+<div class="title-screen">
 
-    <span class="mb-4 inline-block rounded-full bg-cyan-400/10 px-3 py-1 text-sm font-semibold text-cyan-400">
-        CENTRO DE INVESTIGACIÓN POKÉMON
-    </span>
+    <div class="title-content">
 
-    <h2 class="mb-4 text-3xl font-bold tracking-tight md:text-5xl">
-        Bienvenido, <span class="text-cyan-400">investigador</span>
-    </h2>
+        <p class="title-subtitle">POKÉMON RESEARCH DATABASE</p>
 
-    <p class="max-w-2xl text-base leading-relaxed text-slate-400 md:text-lg">
-        Tu misión es explorar, analizar y administrar información sobre el
-        mundo Pokémon. Utilizá las herramientas del laboratorio para descubrir
-        nuevas formas, investigar estrategias y mantener actualizada la Pokédex.
-    </p>
+        <h1 class="game-logo">POKÉLAB</h1>
 
-    <div class="mt-8 flex flex-wrap gap-3">
-        <span class="rounded-lg border border-slate-700 bg-slate-800 px-4 py-2 text-sm text-slate-300">
-            🧬 Investigación
-        </span>
-
-        <span class="rounded-lg border border-slate-700 bg-slate-800 px-4 py-2 text-sm text-slate-300">
-            📊 Análisis de datos
-        </span>
-
-        <span class="rounded-lg border border-slate-700 bg-slate-800 px-4 py-2 text-sm text-slate-300">
-            💾 Base de datos MongoDB
-        </span>
-    </div>
-
-</section>
-
-
-<!-- Módulos disponibles en el laboratorio -->
-<section>
-
-    <div class="mb-6">
-        <h3 class="text-2xl font-bold">Áreas de investigación</h3>
-        <p class="mt-2 text-slate-400">
-            Seleccioná un área para comenzar tu trabajo.
+        <p class="title-description">
+            Centro de Investigación Pokémon
         </p>
-    </div>
 
-    <div class="grid grid-cols-1 gap-5 md:grid-cols-3">
+        <div class="title-menu">
 
-        <!-- Módulo 1: Registro de formas alternativas -->
-        <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 transition hover:border-cyan-400/60">
+            <a href="{{ url_for('main.partida') }}"
+               class="menu-option">
+                NUEVA PARTIDA
+            </a>
 
-            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-400/10 text-2xl">
-                🧬
-            </div>
+            <button class="menu-option disabled-option" disabled>
+                CARGAR PARTIDA
+            </button>
 
-            <h4 class="mb-3 text-lg font-semibold">
-                Formas alternativas
-            </h4>
+        </div>
 
-            <p class="mb-5 text-sm leading-relaxed text-slate-400">
-                Investigá Pokémon y registrá nuevas formas, como las
-                Megaevoluciones, junto con sus estadísticas y habilidades.
-            </p>
-
-            <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">
-                En desarrollo
-            </span>
-
-        </article>
-
-
-        <!-- Módulo 2: Búsqueda competitiva -->
-        <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 transition hover:border-cyan-400/60">
-
-            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-400/10 text-2xl">
-                🔎
-            </div>
-
-            <h4 class="mb-3 text-lg font-semibold">
-                Búsqueda competitiva
-            </h4>
-
-            <p class="mb-5 text-sm leading-relaxed text-slate-400">
-                Encontrá Pokémon según sus tipos, movimientos, habilidades
-                y estadísticas para resolver distintas estrategias.
-            </p>
-
-            <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">
-                En desarrollo
-            </span>
-
-        </article>
-
-
-        <!-- Módulo 3: Administración de información -->
-        <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 transition hover:border-cyan-400/60">
-
-            <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-cyan-400/10 text-2xl">
-                📋
-            </div>
-
-            <h4 class="mb-3 text-lg font-semibold">
-                Gestión de información
-            </h4>
-
-            <p class="mb-5 text-sm leading-relaxed text-slate-400">
-                Consultá y actualizá estadísticas, habilidades y movimientos
-                almacenados en la Pokédex.
-            </p>
-
-            <span class="text-xs font-semibold uppercase tracking-wider text-amber-400">
-                En desarrollo
-            </span>
-
-        </article>
+        <p class="title-footer">
+            Una aventura de investigación comienza...
+        </p>
 
     </div>
 
-</section>
+</div>
 
 {% endblock %}
