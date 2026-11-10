@@ -28,94 +28,76 @@ Los usuarios asumirán el rol de investigadores encargados de administrar inform
 | MongoDB | Base de datos documental |
 | MongoDB Atlas | Alojamiento de la base de datos |
 
-## 🧪 Funcionalidades previstas
+## 🎮 Cómo se juega
 
-### 1. Registro de formas alternativas
-Permite consultar un Pokémon y registrar nuevas formas, incorporando sus estadísticas y habilidades.
+Cada participante entra desde su celular, crea su **investigador** (un documento en la colección
+`investigadores`) y ayuda a los entrenadores que visitan el laboratorio. Cada pedido se resuelve
+operando directamente sobre MongoDB desde la **terminal de la Pokédex**:
 
-Ejemplo: Mega Tyranitar.
+| Entrenador | Pedido | Concepto de MongoDB |
+|---|---|---|
+| 🧢 Rojo | Pokémon que conozcan Señuelo y tengan más de 60 de velocidad | Notación de punto en documentos anidados y arrays de documentos |
+| 👩 Azul | Pokémon de tipo Agua cuya habilidad **oculta** sea Nado Rápido | `$elemMatch` (la trampa de los arrays de documentos) |
+| 🎒 Amarilla | Los 3 tipos con más Pokémon | Pipeline de agregación (`$unwind`, `$group`, `$sort`, `$limit`) |
+| 🧑 Verde | Registrar una forma alternativa (Megaevolución, forma regional...) | Esquema flexible, documentos embebidos, `$push` y operador posicional `$` |
+| 🔧 Plata | Elegir el plan de ejecución más eficiente | Índices, `hint()` y `explain()` (planificador de consultas) |
 
-### 2. Buscador competitivo
-Permite encontrar Pokémon mediante diferentes criterios:
+La terminal muestra siempre el comando real de MongoDB, el **SQL equivalente** en un modelo
+relacional y cuántas tablas/filas ocuparía cada documento. El cuaderno de investigación funciona
+como ayuda-memoria de sintaxis.
 
-- Movimientos disponibles.
-- Tipos.
-- Estadísticas mínimas.
-- Habilidades.
-- Categorías de movimientos.
-
-### 3. Administración de información
-Permite consultar y modificar estadísticas, habilidades y movimientos, aprovechando la flexibilidad de los documentos de MongoDB.
+El **panel del expositor** (`/panel`, protegido con PIN) muestra en vivo, con pipelines de
+agregación: la URL para entrar, cuántos cayeron en cada error, las formas que escribió el público,
+la bitácora de operaciones (colección *capped*), el ranking, un editor de documentos
+(`$set`, `$inc`, `$unset`, `$push`, `$addToSet`, `$pull`) y el reinicio de la base.
 
 ## 🗂️ Estructura del proyecto
 
 ```text
-POKELAB/
+NoSQL-Documental-Group-1/
 ├── app/
+│   ├── __init__.py          # create_app: config, blueprints y carga inicial
+│   ├── config.py            # variables de entorno (.env)
+│   ├── db.py                # conexión a MongoDB (pymongo)
+│   ├── misiones.py          # misiones y criterios de corrección
+│   ├── routes/              # páginas (main), API JSON (api) y panel del expositor
+│   ├── services/            # consultas, agregación, formas, índices, progreso y corrección
+│   ├── static/              # css, js y assets (apartado gráfico)
+│   └── templates/
 ├── database/
-├── docs/
-├── tests/
+│   ├── seed.py              # colecciones, validador $jsonSchema, índices y datos
+│   └── data/                # pokemon.json y avistamientos.json
+├── docs/                    # modelo de datos, guión de la experiencia y despliegue
+├── tests/                   # pytest + mongomock
+├── tools/                   # recortes de sprites (apartado gráfico)
 ├── .env.example
-├── .gitignore
+├── docker-compose.yml       # MongoDB local opcional
 ├── requirements.txt
-├── run.py
-└── README.md
+└── run.py
 ```
 
 ## 🚀 Instalación y ejecución
 
-### Requisitos previos
-
-- Python 3.
-- Git.
-- Una instancia de MongoDB o una cuenta de MongoDB Atlas.
-
-### 1. Clonar el repositorio
-
 ```bash
 git clone <URL_DEL_REPOSITORIO>
-cd POKELAB
-```
-
-### 2. Crear un entorno virtual
-
-```bash
+cd NoSQL-Documental-Group-1
 python -m venv venv
-```
-
-Activarlo:
-
-**Linux:**
-```bash
-source venv/bin/activate
-```
-
-**Windows:**
-```bash
-venv\Scripts\activate
-```
-
-### 3. Instalar dependencias
-
-```bash
+source venv/bin/activate        # Windows: venv\Scripts\activate
 pip install -r requirements.txt
+cp .env.example .env            # completar MONGO_URI (Atlas o local)
+python run.py                   # o: python run.py --prod para la exposición
 ```
 
-### 4. Configurar las variables de entorno
-
-Crear un archivo `.env` tomando como referencia `.env.example`.
-
-Completar las credenciales y la configuración de conexión a MongoDB.
-
-### 5. Ejecutar la aplicación
-
-```bash
-python run.py
-```
+- Juego: `http://localhost:5000` · Panel: `http://localhost:5000/panel`
+- La Pokédex se carga sola la primera vez. Para reiniciarla: `python -m database.seed --todo`.
+- Para comprobar que tu MongoDB soporta todo (explain, validador, capped): `python -m database.verificar`.
+- Detalles (Atlas, red Wi-Fi, publicación): [`docs/despliegue.md`](docs/despliegue.md).
 
 ## 📚 Documentación
 
-La carpeta `docs/` contiene documentación complementaria sobre el desarrollo, incluyendo el diseño del modelo de datos y las decisiones técnicas del proyecto.
+- [`docs/modelo_de_datos.md`](docs/modelo_de_datos.md): colecciones, documento de ejemplo, índices, validación y comparación con SQL.
+- [`docs/guion_experiencia.md`](docs/guion_experiencia.md): propuesta, guión minuto a minuto y cierre de la experiencia práctica.
+- [`docs/despliegue.md`](docs/despliegue.md): instalación, Atlas, red local y tests.
 
 ## 👥 Equipo de desarrollo
 
@@ -127,7 +109,7 @@ Integrantes: *Por completar.*
 
 ## 📌 Estado del proyecto
 
-<code>En desarrollo — MVP en planificación e implementación.</code>
+<code>Funcional — juego conectado a MongoDB. Pendiente: arte definitivo de entrenadores y Pokémon (hoy hay placeholders).</code>
 
 ---
 
