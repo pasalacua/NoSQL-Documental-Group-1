@@ -23,7 +23,17 @@ cp .env.example .env              # Windows: copy .env.example .env
 Instalar MongoDB Community Server (o `docker compose up -d` con el `docker-compose.yml` del repo) y dejar
 `MONGO_URI=mongodb://localhost:27017`.
 
-## 3. Cargar los datos
+## 3. Verificar el servidor
+
+```bash
+python -m database.verificar
+```
+
+Prueba contra tu MongoDB (en una base temporal que después borra) todo lo que usa el juego:
+consultas, `$elemMatch`, agregación, validador `$jsonSchema`, colección capped y `explain()` con
+cada índice. Si todo sale con ✓, el juego está listo.
+
+## 4. Cargar los datos
 
 El juego carga la Pokédex solo la primera vez que arranca. Para reiniciarla a mano:
 
@@ -34,7 +44,7 @@ python -m database.seed --todo   # además borra jugadores, entregas y bitácora
 
 También se puede reiniciar desde el panel del expositor.
 
-## 4. Ejecutar
+## 5. Ejecutar
 
 ```bash
 python run.py          # desarrollo
@@ -49,7 +59,7 @@ Con `HOST=0.0.0.0` los celulares conectados a la **misma red Wi-Fi** entran con 
 notebook (el panel la muestra, por ejemplo `http://192.168.0.15:5000`). Si la red del colegio aísla
 los dispositivos, usar el hotspot de un celular.
 
-## 5. Publicarlo en internet (opcional)
+## 6. Publicarlo en internet (opcional)
 
 Cualquier servicio que corra Python sirve (Render, Railway, Fly.io...):
 
@@ -57,7 +67,7 @@ Cualquier servicio que corra Python sirve (Render, Railway, Fly.io...):
 - Variables de entorno: las mismas del `.env` (`MONGO_URI`, `MONGO_DB_NAME`, `SECRET_KEY`, `PANEL_PIN`).
 - En Atlas, permitir el acceso desde las IP del servicio.
 
-## 6. Tests
+## 7. Tests
 
 ```bash
 pip install -r requirements-dev.txt

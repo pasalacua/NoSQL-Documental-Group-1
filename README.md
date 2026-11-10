@@ -90,6 +90,7 @@ python run.py                   # o: python run.py --prod para la exposición
 
 - Juego: `http://localhost:5000` · Panel: `http://localhost:5000/panel`
 - La Pokédex se carga sola la primera vez. Para reiniciarla: `python -m database.seed --todo`.
+- Para comprobar que tu MongoDB soporta todo (explain, validador, capped): `python -m database.verificar`.
 - Detalles (Atlas, red Wi-Fi, publicación): [`docs/despliegue.md`](docs/despliegue.md).
 
 ## 📚 Documentación
