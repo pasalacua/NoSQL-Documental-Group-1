@@ -132,8 +132,8 @@ body {
 
 .notebook-button img {
     display: block;
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     image-rendering: pixelated;
 }
 
@@ -276,27 +276,45 @@ body {
 
 .notebook-navigation {
     position: absolute;
-    bottom: 2%;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8%;
+    inset: 0;
     z-index: 10;
     pointer-events: none;
 }
 
 .page-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
     pointer-events: auto;
     border: 2px solid #263f50;
     background: #f4f4f4;
     color: #263f50;
-    padding: 8px 14px;
+    padding: 12px 16px;
     font-family: monospace;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#previous-page {
+    left: 10%;
+}
+
+#next-page {
+    right: 10%;
+}
+
+#page-indicator {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #263f50;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .page-arrow:hover:not(:disabled) {
@@ -306,13 +324,6 @@ body {
 .page-arrow:disabled {
     opacity: 0.3;
     cursor: not-allowed;
-}
-
-#page-indicator {
-    color: #263f50;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 14px;
 }
 
 /* Botón único de cierre: esquina superior derecha */

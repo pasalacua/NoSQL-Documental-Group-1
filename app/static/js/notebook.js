@@ -274,10 +274,31 @@ closeNotebook.addEventListener("click", () => {
     notebookPanel.classList.add("hidden");
 });
 
-// Cerrar con Escape
+// Navegación y cierre del cuaderno mediante teclado
 document.addEventListener("keydown", (event) => {
+    if (notebookPanel.classList.contains("hidden")) return;
+
     if (event.key === "Escape") {
         notebookPanel.classList.add("hidden");
+        return;
+    }
+
+    if (event.key === "ArrowLeft") {
+        event.preventDefault();
+
+        if (currentPage > 0) {
+            currentPage--;
+            showPage();
+        }
+    }
+
+    if (event.key === "ArrowRight") {
+        event.preventDefault();
+
+        if (currentPage < notebookPages.length - 1) {
+            currentPage++;
+            showPage();
+        }
     }
 });
 
