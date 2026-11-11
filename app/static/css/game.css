@@ -105,14 +105,13 @@ body {
     min-height: 500px;
     overflow: hidden;
     border: 6px solid #e5e7eb;
-    background:
-        linear-gradient(
-            to bottom,
-            #8ac6d1 0%,
-            #8ac6d1 55%,
-            #77a66b 55%,
-            #77a66b 100%
-        );
+
+    background-color: #77a66b;
+    background-image: url("../assets/backgrounds/background-lab-PKM.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     image-rendering: pixelated;
 }
 
@@ -133,8 +132,8 @@ body {
 
 .notebook-button img {
     display: block;
-    width: 64px;
-    height: 64px;
+    width: 96px;
+    height: 96px;
     image-rendering: pixelated;
 }
 
@@ -277,27 +276,45 @@ body {
 
 .notebook-navigation {
     position: absolute;
-    bottom: 2%;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 8%;
+    inset: 0;
     z-index: 10;
     pointer-events: none;
 }
 
 .page-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
     pointer-events: auto;
     border: 2px solid #263f50;
     background: #f4f4f4;
     color: #263f50;
-    padding: 8px 14px;
+    padding: 12px 16px;
     font-family: monospace;
     font-size: 18px;
     font-weight: bold;
     cursor: pointer;
+}
+
+#previous-page {
+    left: 10%;
+}
+
+#next-page {
+    right: 10%;
+}
+
+#page-indicator {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: #263f50;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 .page-arrow:hover:not(:disabled) {
@@ -307,13 +324,6 @@ body {
 .page-arrow:disabled {
     opacity: 0.3;
     cursor: not-allowed;
-}
-
-#page-indicator {
-    color: #263f50;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 14px;
 }
 
 /* Botón único de cierre: esquina superior derecha */
@@ -494,13 +504,27 @@ button,
     left: 15%;
 }
 
+.oak-character.oak-leaving {
+    animation: oak-exit-left 1.2s ease-in forwards;
+}
+
+@keyframes oak-exit-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-150vw);
+    }
+}
+
 .player-character {
     right: 15%;
 }
 
 /* Tamaño y calidad de los sprites */
 .oak-character img {
-    width: 72px;
+    width: 240px;
     height: auto;
     image-rendering: pixelated;
 }

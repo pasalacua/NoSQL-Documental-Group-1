@@ -50,6 +50,34 @@ const Dialogo = (() => {
         }
     });
 
+    // Permitir avanzar los diálogos utilizando Enter
+    document.addEventListener("keydown", (event) => {
+    if (event.key !== "Enter") return;
+    if (caja.classList.contains("hidden")) return;
+    if (siguiente.classList.contains("hidden")) return;
+
+    // No interferir con campos de texto ni otros controles
+    const objetivo = event.target;
+
+    if (
+        objetivo instanceof HTMLElement &&
+        objetivo.closest("input, textarea, select, [contenteditable='true']")
+    ) {
+        return;
+    }
+
+    if (
+        objetivo instanceof HTMLElement &&
+        objetivo.closest("button") &&
+        !siguiente.contains(objetivo)
+    ) {
+        return;
+    }
+
+    event.preventDefault();
+    siguiente.click();
+});
+
     return {
         mostrar(nuevasLineas, opciones = {}) {
             lineas = Array.isArray(nuevasLineas) ? nuevasLineas : [nuevasLineas];

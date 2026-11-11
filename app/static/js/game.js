@@ -5,6 +5,7 @@
     const opciones = document.getElementById("trainer-options");
     const puntosHud = document.getElementById("hud-points");
     const rankingPanel = document.getElementById("ranking-panel");
+    const oak = document.querySelector(".oak-character");
 
     let misiones = [];
 
@@ -18,6 +19,35 @@
         "Si te trabás, abrí el cuaderno de investigación (arriba a la derecha).",
         "¡Tu trabajo como investigador comienza ahora!",
     ];
+
+    function ocultarOak() {
+        oak?.classList.add("hidden");
+    }
+
+    async function finalizarIntroduccion() {
+        try {
+            // Guardar que el investigador ya completó la presentación
+            await API.post("/api/introduccion/completar");
+            window.POKELAB.introduccionCompletada = true;
+    
+            // Animar la salida del Profesor Oak
+            if (oak) {
+                await new Promise((resolve) => {
+                    oak.addEventListener("animationend", resolve, { once: true });
+                    oak.classList.add("oak-leaving");
+                });
+            }
+    
+            // Ocultar a Oak y mostrar los entrenadores
+            ocultarOak();
+            mostrarEntrenadores();
+    
+        } catch (error) {
+            Dialogo.mostrar(
+                error.error || "No se pudo guardar el progreso de la introducción. Intentá nuevamente."
+            );
+        }
+    }
 
     function actualizarPerfil(perfil) {
         if (perfil) puntosHud.textContent = perfil.puntos;
@@ -115,15 +145,11 @@
             Dialogo.mostrar(error.error || "No se pudo conectar con la base de datos del laboratorio.");
             return;
         }
-        if (window.POKELAB.nueva) {
-            Dialogo.mostrar(introduccion, { alTerminar: mostrarEntrenadores });
+        if (window.POKELAB.introduccionCompletada) {
+            ocultarOak();
+            mostrarEntrenadores();
         } else {
-            const restantes = pendientes();
-            Dialogo.mostrar(
-                `Profesor Oak: ¡Hola de nuevo, ${window.POKELAB.nombre}! ` +
-                (restantes ? `Te quedan ${restantes} solicitud${restantes === 1 ? "" : "es"}.` : "Ya resolviste todo, podés practicar."),
-                { alTerminar: mostrarEntrenadores }
-            );
+            Dialogo.mostrar(introduccion, { alTerminar: finalizarIntroduccion });
         }
     })();
 })();

@@ -20,6 +20,23 @@ def test_crear_y_cargar_partida(cliente):
     assert cliente.post("/api/investigadores/cargar", json={"nombre": "Nadie"}).status_code == 400
 
 
+def test_introduccion_se_guarda_y_no_se_repite_al_cargar(jugador):
+    perfil = jugador.get("/api/yo").get_json()
+    assert perfil["introduccion_completada"] is False
+
+    respuesta = jugador.post("/api/introduccion/completar")
+    assert respuesta.status_code == 200
+    assert respuesta.get_json()["introduccion_completada"] is True
+
+    jugador.post("/api/salir")
+    assert jugador.post("/api/investigadores/cargar", json={"nombre": "Ash"}).status_code == 200
+    assert jugador.get("/api/yo").get_json()["introduccion_completada"] is True
+
+    pagina = jugador.get("/partida")
+    assert b'class="oak-character hidden"' in pagina.data
+    assert b'class="dialogue-box hidden"' in pagina.data
+
+
 def test_nombre_invalido(cliente):
     assert cliente.post("/api/investigadores", json={"nombre": "<script>"}).status_code == 400
 

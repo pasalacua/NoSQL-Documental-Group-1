@@ -16,5 +16,9 @@ def partida():
     investigador = buscar_por_id(get_db(), session.get("investigador_id"))
     if not investigador:
         return redirect(url_for("main.index"))
+    introduccion_completada = investigador.get(
+        "introduccion_completada", bool(investigador.get("misiones"))
+    )
     return render_template("game.html", investigador=investigador,
-                           nueva=not investigador.get("misiones"))
+                           nueva=not investigador.get("misiones"),
+                           introduccion_completada=introduccion_completada)

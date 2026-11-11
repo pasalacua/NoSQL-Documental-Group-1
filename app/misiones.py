@@ -32,7 +32,7 @@ MISIONES = [
         "orden": 1,
         "tipo": "busqueda",
         "entrenador": "Entrenador Rojo",
-        "sprite": "🧢",
+        "sprite": "👨🏿‍🦰",
         "pedido": ("Necesito TODOS los Pokémon que conozcan el movimiento Señuelo (Follow Me) "
                    "y tengan MÁS de 60 puntos de velocidad."),
         "concepto": "Documentos anidados y arrays de documentos (notación de punto)",
@@ -54,12 +54,12 @@ MISIONES = [
         "orden": 2,
         "tipo": "busqueda",
         "entrenador": "Entrenadora Azul",
-        "sprite": "👩",
+        "sprite": "👩🏼‍🦲",
         "pedido": ("Busco TODOS los Pokémon de tipo Agua cuya habilidad OCULTA sea "
                    "Nado Rápido (Swift Swim)."),
         "concepto": "Consultas sobre arrays de documentos con $elemMatch",
         "pista": ("'habilidades' es un array de documentos {nombre, oculta}. Si escribís dos condiciones "
-                  "sueltas, MongoDB puede cumplir cada una con un elemento DISTINTO del array. "
+                  "su👷🏻eltas, MongoDB puede cumplir cada una con un elemento DISTINTO del array. "
                   "Activá 'mismo elemento ($elemMatch)' para exigir que se cumplan juntas."),
         "exito": ("¡Perfecto! $elemMatch obliga a que 'nombre' y 'oculta' se cumplan en el MISMO elemento "
                   "del array. Sin él, Kingdra o Magikarp se cuelan porque tienen Nado Rápido como "
@@ -77,7 +77,7 @@ MISIONES = [
         "orden": 3,
         "tipo": "agregacion",
         "entrenador": "Entrenadora Amarilla",
-        "sprite": "🎒",
+        "sprite": "🧏‍♂️",
         "pedido": ("Quiero conocer la Pokédex: ¿cuáles son los 3 tipos con MÁS Pokémon y cuántos "
                    "Pokémon hay de cada uno? Armá el pipeline de agregación."),
         "concepto": "Pipeline de agregación ($unwind, $group, $sort, $limit)",
@@ -99,7 +99,7 @@ MISIONES = [
         "orden": 4,
         "tipo": "registro",
         "entrenador": "Entrenador Verde",
-        "sprite": "🧑",
+        "sprite": "💁🏼‍♂️",
         "pedido": ("Quiero investigar las formas alternativas de algunos Pokémon. Te pasé un "
                    "avistamiento: registralo como una forma DENTRO del documento del Pokémon."),
         "concepto": "Esquema flexible y documentos embebidos ($push, operador posicional $)",
@@ -113,8 +113,8 @@ MISIONES = [
         "clave": "plata",
         "orden": 5,
         "tipo": "indices",
-        "entrenador": "Ingeniero Plata",
-        "sprite": "🔧",
+        "entrenador": "Ingeniero Ricky",
+        "sprite": "👷🏻",
         "pedido": ("La consulta del Entrenador Rojo se va a ejecutar miles de veces por día. Probá los "
                    "distintos planes de ejecución y elegí el que examina MENOS documentos."),
         "concepto": "Índices y planificador de consultas (explain)",
