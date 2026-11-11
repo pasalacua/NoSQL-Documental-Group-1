@@ -105,14 +105,13 @@ body {
     min-height: 500px;
     overflow: hidden;
     border: 6px solid #e5e7eb;
-    background:
-        linear-gradient(
-            to bottom,
-            #8ac6d1 0%,
-            #8ac6d1 55%,
-            #77a66b 55%,
-            #77a66b 100%
-        );
+
+    background-color: #77a66b;
+    background-image: url("../assets/backgrounds/background-lab-PKM.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
     image-rendering: pixelated;
 }
 
@@ -500,7 +499,7 @@ button,
 
 /* Tamaño y calidad de los sprites */
 .oak-character img {
-    width: 94px;
+    width: 240px;
     height: auto;
     image-rendering: pixelated;
 }
