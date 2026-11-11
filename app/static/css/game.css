@@ -500,7 +500,7 @@ button,
 
 /* Tamaño y calidad de los sprites */
 .oak-character img {
-    width: 72px;
+    width: 94px;
     height: auto;
     image-rendering: pixelated;
 }
