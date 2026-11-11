@@ -67,6 +67,16 @@ def yo(investigador):
     return jsonify(progreso.perfil(investigador))
 
 
+@api.post("/introduccion/completar")
+@requiere_investigador
+def completar_introduccion(investigador):
+    get_db().investigadores.update_one(
+        {"_id": investigador["_id"]},
+        {"$set": {"introduccion_completada": True, "ultima_actividad": progreso.ahora()}},
+    )
+    return jsonify({"ok": True, "introduccion_completada": True})
+
+
 @api.post("/salir")
 def salir():
     session.pop("investigador_id", None)
