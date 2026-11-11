@@ -26,12 +26,26 @@
 
     async function finalizarIntroduccion() {
         try {
+            // Guardar que el investigador ya completó la presentación
             await API.post("/api/introduccion/completar");
             window.POKELAB.introduccionCompletada = true;
+    
+            // Animar la salida del Profesor Oak
+            if (oak) {
+                await new Promise((resolve) => {
+                    oak.addEventListener("animationend", resolve, { once: true });
+                    oak.classList.add("oak-leaving");
+                });
+            }
+    
+            // Ocultar a Oak y mostrar los entrenadores
             ocultarOak();
             mostrarEntrenadores();
+    
         } catch (error) {
-            Dialogo.mostrar(error.error || "No se pudo guardar el progreso de la introducción. Intentá nuevamente.");
+            Dialogo.mostrar(
+                error.error || "No se pudo guardar el progreso de la introducción. Intentá nuevamente."
+            );
         }
     }
 

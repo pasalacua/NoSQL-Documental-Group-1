@@ -107,7 +107,7 @@ body {
     border: 6px solid #e5e7eb;
 
     background-color: #77a66b;
-    background-image: url("../assets/backgrounds/background-lab-PKM.jpeg");
+    background-image: url("../assets/backgrounds/background-lab-PKM.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -491,6 +491,20 @@ button,
 
 .oak-character {
     left: 15%;
+}
+
+.oak-character.oak-leaving {
+    animation: oak-exit-left 1.2s ease-in forwards;
+}
+
+@keyframes oak-exit-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-150vw);
+    }
 }
 
 .player-character {
