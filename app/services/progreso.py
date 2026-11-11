@@ -34,6 +34,7 @@ def crear_investigador(db, nombre):
         "creado": ahora(),
         "ultima_actividad": ahora(),
         "puntos": 0,
+        "introduccion_completada": False,
         "misiones": [],   # array de documentos embebidos: {clave, puntos, completada_en}
         "intentos": {},   # documento anidado: {clave_mision: fallos}
     }
@@ -122,6 +123,9 @@ def perfil(investigador):
     return {
         "nombre": investigador["nombre"],
         "puntos": investigador.get("puntos", 0),
+        "introduccion_completada": investigador.get(
+            "introduccion_completada", bool(investigador.get("misiones"))
+        ),
         "misiones": [a_json(m) for m in investigador.get("misiones", [])],
         "intentos": investigador.get("intentos", {}),
     }
