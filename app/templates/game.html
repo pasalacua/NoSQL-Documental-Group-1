@@ -26,7 +26,7 @@
         </button>
 
         <!-- Profesor Oak -->
-        <div class="oak-character">
+        <div class="oak-character{% if introduccion_completada %} hidden{% endif %}">
             <img
                 src="{{ url_for('static', filename='assets/characters/trainers/professor-oak.png') }}"
                 alt="Profesor Oak"
@@ -51,7 +51,7 @@
         </div>
 
         <!-- Cuadro de diálogo -->
-        <div class="dialogue-box">
+        <div class="dialogue-box{% if introduccion_completada %} hidden{% endif %}">
             <p id="dialogue-text">
                 ¡Bienvenido al laboratorio Pokémon!
             </p>
@@ -167,7 +167,7 @@
 
 {% block scripts %}
 <script>
-    window.POKELAB = {{ {"nombre": investigador.nombre, "nueva": nueva} | tojson }};
+    window.POKELAB = {{ {"nombre": investigador.nombre, "nueva": nueva, "introduccionCompletada": introduccion_completada} | tojson }};
 </script>
 <script src="{{ url_for('static', filename='js/dialogue.js') }}"></script>
 <script src="{{ url_for('static', filename='js/notebook.js') }}"></script>
